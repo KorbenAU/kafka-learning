@@ -4,7 +4,7 @@
 kafka-console-producer 
 
 # producing
-kafka-console-producer --bootstrap-server 192.168.1.101:29092 --topic first_topic 
+kafka-console-producer --bootstrap-server 192.168.1.101:29092,192.168.1.101:39092 --topic first_topic 
 > Hello World
 >My name is Conduktor
 >I love Kafka
@@ -12,36 +12,36 @@ kafka-console-producer --bootstrap-server 192.168.1.101:29092 --topic first_topi
 
 
 # producing with properties
-kafka-console-producer --bootstrap-server 192.168.1.101:29092 --topic first_topic --producer-property acks=all
+kafka-console-producer --bootstrap-server 192.168.1.101:29092,192.168.1.101:39092 --topic first_topic --producer-property acks=all
 > some message that is acked
 > just for fun
 > fun learning!
 
 
 # producing to a non existing topic
-kafka-console-producer --bootstrap-server 192.168.1.101:29092 --topic new_topic
+kafka-console-producer --bootstrap-server 192.168.1.101:29092,192.168.1.101:39092 --topic new_topic
 > hello world!
 
 # our new topic only has 1 partition
-kafka-topics --bootstrap-server 192.168.1.101:29092 --list
-kafka-topics --bootstrap-server 192.168.1.101:29092 --topic new_topic --describe
+kafka-topics --bootstrap-server 192.168.1.101:29092,192.168.1.101:39092 --list
+kafka-topics --bootstrap-server 192.168.1.101:29092,192.168.1.101:39092 --topic new_topic --describe
 
 
 # edit config/server.properties or config/kraft/server.properties
 # num.partitions=3
 
 # produce against a non existing topic again
-kafka-console-producer --bootstrap-server 192.168.1.101:29092 --topic new_topic_2
+kafka-console-producer --bootstrap-server 192.168.1.101:29092,192.168.1.101:39092 --topic new_topic_2
 hello again!
 
 # this time our topic has 3 partitions
-kafka-topics --bootstrap-server 192.168.1.101:29092 --list
-kafka-topics --bootstrap-server 192.168.1.101:29092 --topic new_topic_2 --describe
+kafka-topics --bootstrap-server 192.168.1.101:29092,192.168.1.101:39092 --list
+kafka-topics --bootstrap-server 192.168.1.101:29092,192.168.1.101:39092 --topic new_topic_2 --describe
 
 # overall, please create topics before producing to them!
 
 
 # produce with keys
-kafka-console-producer --bootstrap-server 192.168.1.101:29092 --topic first_topic --property parse.key=true --property key.separator=:
+kafka-console-producer --bootstrap-server 192.168.1.101:29092,192.168.1.101:39092 --topic first_topic --property parse.key=true --property key.separator=:
 >example key:example value
 >name:Stephane
