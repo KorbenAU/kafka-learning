@@ -1,0 +1,2246 @@
+{
+    "type": "record",
+    "name": "Credit Application Schema",
+    "fields": [
+        {
+            "name": "Package",
+            "type": {
+                "type": "record",
+                "name": "Package",
+                "fields": [
+                    {
+                        "name": "Content",
+                        "type": {
+                            "type": "record",
+                            "name": "Package",
+                            "namespace": "Content",
+                            "fields": [
+                                {
+                                    "name": "Application",
+                                    "type": {
+                                        "type": "record",
+                                        "name": "Package",
+                                        "namespace": "Application.Content",
+                                        "fields": [
+                                            {
+                                                "name": "Address",
+                                                "type": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "record",
+                                                        "name": "Package",
+                                                        "namespace": "Address.Application.Content",
+                                                        "fields": [
+                                                            {
+                                                                "name": "AustralianPostCode",
+                                                                "type": "string",
+                                                                "doc": "A four digit numeric descriptor for a postal delivery area, aligned with placename, suburb or locality and in some circumstances a unique Postal Delivery Type."
+                                                            },
+                                                            {
+                                                                "name": "AustralianState",
+                                                                "type": "enum",
+                                                                "symbols": [
+                                                                    "ACT",
+                                                                    "NSW",
+                                                                    "NT",
+                                                                    "QLD",
+                                                                    "SA",
+                                                                    "TAS",
+                                                                    "VIC",
+                                                                    "WA"
+                                                                ],
+                                                                "doc": "The defined State or Territory in Australia (in abbreviated format) that the specific Dealing is registered in"
+                                                            },
+                                                            {
+                                                                "name": "Country",
+                                                                "type": "enum",
+                                                                "symbols": [
+                                                                    "AD",
+                                                                    "AE",
+                                                                    "AF",
+                                                                    "AG",
+                                                                    "AI",
+                                                                    "AL",
+                                                                    "AM",
+                                                                    "AO",
+                                                                    "AQ",
+                                                                    "AR",
+                                                                    "AS",
+                                                                    "AT",
+                                                                    "AU",
+                                                                    "AW",
+                                                                    "AX",
+                                                                    "AZ",
+                                                                    "BA",
+                                                                    "BB",
+                                                                    "BD",
+                                                                    "BE",
+                                                                    "BF",
+                                                                    "BG",
+                                                                    "BH",
+                                                                    "BI",
+                                                                    "BJ",
+                                                                    "BL",
+                                                                    "BM",
+                                                                    "BN",
+                                                                    "BO",
+                                                                    "BQ",
+                                                                    "BR",
+                                                                    "BS",
+                                                                    "BT",
+                                                                    "BV",
+                                                                    "BW",
+                                                                    "BY",
+                                                                    "BZ",
+                                                                    "CA",
+                                                                    "CC",
+                                                                    "CD",
+                                                                    "CF",
+                                                                    "CG",
+                                                                    "CH",
+                                                                    "CI",
+                                                                    "CK",
+                                                                    "CL",
+                                                                    "CM",
+                                                                    "CN",
+                                                                    "CO",
+                                                                    "CR",
+                                                                    "CU",
+                                                                    "CV",
+                                                                    "CW",
+                                                                    "CX",
+                                                                    "CY",
+                                                                    "CZ",
+                                                                    "DE",
+                                                                    "DJ",
+                                                                    "DK",
+                                                                    "DM",
+                                                                    "DO",
+                                                                    "DZ",
+                                                                    "EC",
+                                                                    "EE",
+                                                                    "EG",
+                                                                    "EH",
+                                                                    "ER",
+                                                                    "ES",
+                                                                    "ET",
+                                                                    "FI",
+                                                                    "FJ",
+                                                                    "FK",
+                                                                    "FM",
+                                                                    "FO",
+                                                                    "FR",
+                                                                    "GA",
+                                                                    "GB",
+                                                                    "GD",
+                                                                    "GE",
+                                                                    "GF",
+                                                                    "GG",
+                                                                    "GH",
+                                                                    "GI",
+                                                                    "GL",
+                                                                    "GM",
+                                                                    "GN",
+                                                                    "GP",
+                                                                    "GQ",
+                                                                    "GR",
+                                                                    "GS",
+                                                                    "GT",
+                                                                    "GU",
+                                                                    "GW",
+                                                                    "GY",
+                                                                    "HK",
+                                                                    "HM",
+                                                                    "HN",
+                                                                    "HR",
+                                                                    "HT",
+                                                                    "HU",
+                                                                    "ID",
+                                                                    "IE",
+                                                                    "IL",
+                                                                    "IM",
+                                                                    "IN",
+                                                                    "IO",
+                                                                    "IQ",
+                                                                    "IR",
+                                                                    "IS",
+                                                                    "IT",
+                                                                    "JE",
+                                                                    "JM",
+                                                                    "JO",
+                                                                    "JP",
+                                                                    "KE",
+                                                                    "KG",
+                                                                    "KH",
+                                                                    "KI",
+                                                                    "KM",
+                                                                    "KN",
+                                                                    "KP",
+                                                                    "KR",
+                                                                    "KW",
+                                                                    "KY",
+                                                                    "KZ",
+                                                                    "LA",
+                                                                    "LB",
+                                                                    "LC",
+                                                                    "LI",
+                                                                    "LK",
+                                                                    "LR",
+                                                                    "LS",
+                                                                    "LT",
+                                                                    "LU",
+                                                                    "LV",
+                                                                    "LY",
+                                                                    "MA",
+                                                                    "MC",
+                                                                    "MD",
+                                                                    "ME",
+                                                                    "MF",
+                                                                    "MG",
+                                                                    "MH",
+                                                                    "MK",
+                                                                    "ML",
+                                                                    "MM",
+                                                                    "MN",
+                                                                    "MO",
+                                                                    "MP",
+                                                                    "MQ",
+                                                                    "MR",
+                                                                    "MS",
+                                                                    "MT",
+                                                                    "MU",
+                                                                    "MV",
+                                                                    "MW",
+                                                                    "MX",
+                                                                    "MY",
+                                                                    "MZ",
+                                                                    "NA",
+                                                                    "NC",
+                                                                    "NE",
+                                                                    "NF",
+                                                                    "NG",
+                                                                    "NI",
+                                                                    "NL",
+                                                                    "NO",
+                                                                    "NP",
+                                                                    "NR",
+                                                                    "NU",
+                                                                    "NZ",
+                                                                    "OM",
+                                                                    "PA",
+                                                                    "PE",
+                                                                    "PF",
+                                                                    "PG",
+                                                                    "PH",
+                                                                    "PK",
+                                                                    "PL",
+                                                                    "PM",
+                                                                    "PN",
+                                                                    "PR",
+                                                                    "PS",
+                                                                    "PT",
+                                                                    "PW",
+                                                                    "PY",
+                                                                    "QA",
+                                                                    "RE",
+                                                                    "RO",
+                                                                    "RS",
+                                                                    "RU",
+                                                                    "RW",
+                                                                    "SBA",
+                                                                    "SC",
+                                                                    "SD",
+                                                                    "SE",
+                                                                    "SG",
+                                                                    "SH",
+                                                                    "SI",
+                                                                    "SJ",
+                                                                    "SK",
+                                                                    "SL",
+                                                                    "SM",
+                                                                    "SN",
+                                                                    "SO",
+                                                                    "SR",
+                                                                    "SS",
+                                                                    "ST",
+                                                                    "SV",
+                                                                    "SX",
+                                                                    "SY",
+                                                                    "SZ",
+                                                                    "TC",
+                                                                    "TD",
+                                                                    "TF",
+                                                                    "TG",
+                                                                    "TH",
+                                                                    "TJ",
+                                                                    "TK",
+                                                                    "TL",
+                                                                    "TM",
+                                                                    "TN",
+                                                                    "TO",
+                                                                    "TR",
+                                                                    "TT",
+                                                                    "TV",
+                                                                    "TW",
+                                                                    "TZ",
+                                                                    "UA",
+                                                                    "UG",
+                                                                    "UM",
+                                                                    "US",
+                                                                    "UY",
+                                                                    "UZ",
+                                                                    "VA",
+                                                                    "VC",
+                                                                    "VE",
+                                                                    "VG",
+                                                                    "VI",
+                                                                    "VN",
+                                                                    "VU",
+                                                                    "WF",
+                                                                    "WS",
+                                                                    "XK",
+                                                                    "YE",
+                                                                    "YT",
+                                                                    "ZA",
+                                                                    "ZM",
+                                                                    "ZW"
+                                                                ],
+                                                                "doc": "The destination country of the address"
+                                                            },
+                                                            {
+                                                                "name": "Suburb",
+                                                                "type": "string",
+                                                                "doc": "The full name of the placename or Post Office of delivery containing the specific address, which may include a Delivery Centre or a Business Centre."
+                                                            },
+                                                            {
+                                                                "name": "Type",
+                                                                "type": "enum",
+                                                                "symbols": [
+                                                                    "DX Box",
+                                                                    "Non Standard",
+                                                                    "PO Box or Bag",
+                                                                    "Standard"
+                                                                ],
+                                                                "doc": "Determines if the address is Standard, Non Standard, a DX Box or a PO BOX"
+                                                            },
+                                                            {
+                                                                "name": "UniqueID",
+                                                                "type": "string",
+                                                                "doc": "Unique ID"
+                                                            },
+                                                            {
+                                                                "name": "Standard",
+                                                                "type": {
+                                                                    "type": "record",
+                                                                    "name": "Package",
+                                                                    "namespace": "Standard.Address.Application.Content",
+                                                                    "fields": [
+                                                                        {
+                                                                            "name": "StreetName",
+                                                                            "type": "string",
+                                                                            "doc": "The full street name used to identify the street location of the property."
+                                                                        },
+                                                                        {
+                                                                            "name": "StreetNumber",
+                                                                            "type": "string",
+                                                                            "doc": "To record the numeric or numeric/alpha reference number of a house or property."
+                                                                        },
+                                                                        {
+                                                                            "name": "StreetType",
+                                                                            "type": "string",
+                                                                            "doc": "Used to identify the thoroughfare type"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "doc": "The standard address."
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "doc": "Any real or postal address, used by reference"
+                                            },
+                                            {
+                                                "name": "Household",
+                                                "type": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "record",
+                                                        "name": "Package",
+                                                        "namespace": "Household.Application.Content",
+                                                        "fields": [
+                                                            {
+                                                                "name": "NumberOfAdults",
+                                                                "type": "int",
+                                                                "doc": "The number of adults in the household"
+                                                            },
+                                                            {
+                                                                "name": "NumberOfDependants",
+                                                                "type": "int",
+                                                                "doc": "The number of dependants in this applicant household."
+                                                            },
+                                                            {
+                                                                "name": "UniqueID",
+                                                                "type": "string",
+                                                                "doc": "Unique ID"
+                                                            },
+                                                            {
+                                                                "name": "ExpenseDetails",
+                                                                "type": {
+                                                                    "type": "record",
+                                                                    "name": "Package",
+                                                                    "namespace": "ExpenseDetails.Household.Application.Content",
+                                                                    "fields": [
+                                                                        {
+                                                                            "name": "LivingExpense",
+                                                                            "type": {
+                                                                                "type": "array",
+                                                                                "items": {
+                                                                                    "type": "record",
+                                                                                    "name": "Package",
+                                                                                    "namespace": "LivingExpense.ExpenseDetails.Household.Application.Content",
+                                                                                    "fields": [
+                                                                                        {
+                                                                                            "name": "Amount",
+                                                                                            "type": "double",
+                                                                                            "doc": "The dollar amount of this particular living expense for the household as declared by the applicant."
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "Category",
+                                                                                            "type": "enum",
+                                                                                            "symbols": [
+                                                                                                "Body Corporate Fees, Strata Fees and Land Tax on Owner Occupied Principal Place of Residence",
+                                                                                                "Childcare",
+                                                                                                "Clothing and personal care",
+                                                                                                "Education",
+                                                                                                "General Basic Insurances",
+                                                                                                "Groceries",
+                                                                                                "Health Insurance",
+                                                                                                "Higher Education, Vocational Training and Professional Fees",
+                                                                                                "Insurance",
+                                                                                                "Investment Property Running Costs",
+                                                                                                "Investment property utilities, rates and related costs",
+                                                                                                "Medical and health",
+                                                                                                "Other",
+                                                                                                "Owner occupied property utilities, rates and related costs",
+                                                                                                "Pet Care",
+                                                                                                "Primary Residence Running Costs",
+                                                                                                "Private Schooling and Tuition",
+                                                                                                "Public or Government Primary and Secondary Education",
+                                                                                                "Recreation and entertainment",
+                                                                                                "Secondary Residence Running Costs",
+                                                                                                "Sickness and Personal Accident Insurance, Life Insurance",
+                                                                                                "Telephone, internet, pay TV and media streaming subscriptions",
+                                                                                                "Transport",
+                                                                                                "Voluntary Superannuation Contributions"
+                                                                                            ],
+                                                                                            "doc": "The category that this declared living expense falls under."
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "Frequency",
+                                                                                            "type": "enum",
+                                                                                            "symbols": [
+                                                                                                "Daily",
+                                                                                                "Fortnightly",
+                                                                                                "Half Yearly",
+                                                                                                "Monthly",
+                                                                                                "One Off",
+                                                                                                "Quarterly",
+                                                                                                "Seasonal",
+                                                                                                "Weekly",
+                                                                                                "Yearly"
+                                                                                            ],
+                                                                                            "doc": "The frequency that corresponds to the declared amount for this particular Living Expense."
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "UniqueID",
+                                                                                            "type": "string",
+                                                                                            "doc": "Unique ID"
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "PercentResponsible",
+                                                                                            "type": {
+                                                                                                "type": "record",
+                                                                                                "name": "Package",
+                                                                                                "namespace": "PercentResponsible.LivingExpense.ExpenseDetails.Household.Application.Content",
+                                                                                                "fields": [
+                                                                                                    {
+                                                                                                        "name": "Owner",
+                                                                                                        "type": {
+                                                                                                            "type": "array",
+                                                                                                            "items": {
+                                                                                                                "type": "record",
+                                                                                                                "name": "Package",
+                                                                                                                "namespace": "Owner.PercentResponsible.LivingExpense.ExpenseDetails.Household.Application.Content",
+                                                                                                                "fields": [
+                                                                                                                    {
+                                                                                                                        "name": "Percent",
+                                                                                                                        "type": "double"
+                                                                                                                    },
+                                                                                                                    {
+                                                                                                                        "name": "x_Party",
+                                                                                                                        "type": "string",
+                                                                                                                        "doc": "Contains a reference to a party that is an owner of the item, or has a similar relationship such as a borrower or beneficiary."
+                                                                                                                    }
+                                                                                                                ]
+                                                                                                            }
+                                                                                                        },
+                                                                                                        "doc": "Container that associates a reference to an owner or other responsible party with the percentage of the item that they own or are responsible for."
+                                                                                                    }
+                                                                                                ]
+                                                                                            },
+                                                                                            "doc": "Where the party responsible for the expense needs to be established at an individual level, this element identifies the party that is responsible for the split and corresponding percentages. Each expense may be owned by one or more parties, typically the applicants, so there may be more than one owner referenced. An expense may also be partially owned by a non applicant, such as an applicant s spouse, in which case the third party owner may be referenced, or less than 100% ownership of the expense may be assigned."
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            },
+                                                                            "doc": "Contains the details of a single line item that forms part of the household s declared living expenses."
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "doc": "The set of expenses declared for the household, including Living Expenses and Other Commitments."
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "doc": "A household to which one or more person applicants belong, used in relation to the calculation of household living expenses"
+                                            },
+                                            {
+                                                "name": "Liability",
+                                                "type": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "record",
+                                                        "name": "Package",
+                                                        "namespace": "Liability.Application.Content",
+                                                        "fields": [
+                                                            {
+                                                                "name": "AnnualInterestRate",
+                                                                "type": "double",
+                                                                "doc": "Captures the annual interest rate that applies to the liability"
+                                                            },
+                                                            {
+                                                                "name": "OriginalAmount",
+                                                                "type": "double",
+                                                                "doc": "Captures the original loan amount, being the credit limit for a line of credit, or the fully drawn principal amount for an amortising loan."
+                                                            },
+                                                            {
+                                                                "name": "OriginalLoanPurpose",
+                                                                "type": "enum",
+                                                                "symbols": [
+                                                                    "Business",
+                                                                    "Investment Non Residential",
+                                                                    "Investment Residential",
+                                                                    "Owner Occupied",
+                                                                    "Personal"
+                                                                ],
+                                                                "doc": "Captures the original loan purpose"
+                                                            },
+                                                            {
+                                                                "name": "OutstandingBalance",
+                                                                "type": "double",
+                                                                "doc": "Captures the outstanding, current or unpaid balance of the liability."
+                                                            },
+                                                            {
+                                                                "name": "Type",
+                                                                "type": "enum",
+                                                                "symbols": [
+                                                                    "Amortising Home Loan",
+                                                                    "Bridging Finance",
+                                                                    "Car Loan",
+                                                                    "Commercial Bill",
+                                                                    "Contingent Liability",
+                                                                    "Credit Card",
+                                                                    "Government Benefits Debt",
+                                                                    "HECS-HELP",
+                                                                    "Hire Purchase",
+                                                                    "Invoice Financing Loan",
+                                                                    "Lease",
+                                                                    "Line of Credit",
+                                                                    "Line of Credit Home Loan",
+                                                                    "Loan as Guarantor",
+                                                                    "Margin Loan",
+                                                                    "Mortgage Loan",
+                                                                    "Other",
+                                                                    "Other Loan",
+                                                                    "Outstanding Taxation",
+                                                                    "Overdraft",
+                                                                    "Personal Loan",
+                                                                    "Store Card",
+                                                                    "Student Loan",
+                                                                    "Term Loan",
+                                                                    "Trade Finance Loan"
+                                                                ],
+                                                                "doc": "The type of liability. Types include credit card limits, HECS debt, existing loans, etc."
+                                                            },
+                                                            {
+                                                                "name": "PercentOwned",
+                                                                "type": {
+                                                                    "type": "record",
+                                                                    "name": "Package",
+                                                                    "namespace": "PercentOwned.Liability.Application.Content",
+                                                                    "fields": [
+                                                                        {
+                                                                            "name": "Owner",
+                                                                            "type": {
+                                                                                "type": "array",
+                                                                                "items": {
+                                                                                    "type": "record",
+                                                                                    "name": "Package",
+                                                                                    "namespace": "Owner.PercentOwned.Liability.Application.Content",
+                                                                                    "fields": [
+                                                                                        {
+                                                                                            "name": "Percent",
+                                                                                            "type": "double"
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "x_Party",
+                                                                                            "type": "string",
+                                                                                            "doc": "A reference to a party that is an responsible for the liability."
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            },
+                                                                            "doc": "The details of the ownership of this liability, either as borrower or guarantor."
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "doc": "Identifies the party/s that are responsible for the liability and the amount they are responsible for, either as a borrower or guarantor."
+                                                            },
+                                                            {
+                                                                "name": "RemainingTerm",
+                                                                "type": {
+                                                                    "type": "record",
+                                                                    "name": "Package",
+                                                                    "namespace": "RemainingTerm.Liability.Application.Content",
+                                                                    "fields": [
+                                                                        {
+                                                                            "name": "Duration",
+                                                                            "type": "int",
+                                                                            "doc": "The duration of the remaining term."
+                                                                        },
+                                                                        {
+                                                                            "name": "Units",
+                                                                            "type": "enum",
+                                                                            "symbols": [
+                                                                                "Days",
+                                                                                "Months",
+                                                                                "Weeks",
+                                                                                "Years"
+                                                                            ],
+                                                                            "doc": "The units used to define the duration of the remaining term."
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "doc": "Container element for capturing the remaining term of liabilities not being refinanced."
+                                                            },
+                                                            {
+                                                                "name": "Repayment",
+                                                                "type": {
+                                                                    "type": "array",
+                                                                    "items": {
+                                                                        "type": "record",
+                                                                        "name": "Package",
+                                                                        "namespace": "Repayment.Liability.Application.Content",
+                                                                        "fields": [
+                                                                            {
+                                                                                "name": "RepaymentAmount",
+                                                                                "type": "double",
+                                                                                "doc": "The repayment expense amount associated with repaying this loan"
+                                                                            },
+                                                                            {
+                                                                                "name": "RepaymentFrequency",
+                                                                                "type": "enum",
+                                                                                "symbols": [
+                                                                                    "Daily",
+                                                                                    "Fortnightly",
+                                                                                    "Half Yearly",
+                                                                                    "Monthly",
+                                                                                    "One Off",
+                                                                                    "Quarterly",
+                                                                                    "Seasonal",
+                                                                                    "Weekly",
+                                                                                    "Yearly"
+                                                                                ],
+                                                                                "doc": "The payment frequency of the repayment associated with this loan"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "doc": "Details of the repayment expense associated with this loan"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "doc": "A liability item is a debt owed to a creditor or lender such as a loan, line of credit, or tax bill."
+                                            },
+                                            {
+                                                "name": "LoanDetails",
+                                                "type": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "record",
+                                                        "name": "Package",
+                                                        "namespace": "LoanDetails.Application.Content",
+                                                        "fields": [
+                                                            {
+                                                                "name": "AmountRequested",
+                                                                "type": "double",
+                                                                "doc": "Captures the loan amount as requested by the applicant for this loan account, exclusive of to be capitalised fees and/or LMI."
+                                                            },
+                                                            {
+                                                                "name": "LoanType",
+                                                                "type": "enum",
+                                                                "symbols": [
+                                                                    "Amortising Home Loan",
+                                                                    "Bank Guarantee",
+                                                                    "Bridging Finance",
+                                                                    "Chattel Mortgage",
+                                                                    "Commercial Bill",
+                                                                    "Commercial Hire Purchase",
+                                                                    "Credit Card",
+                                                                    "Finance Lease",
+                                                                    "Invoice Financing Loan",
+                                                                    "Lease",
+                                                                    "Line of Credit",
+                                                                    "Line of Credit Home Loan",
+                                                                    "Margin Loan",
+                                                                    "Mortgage Loan",
+                                                                    "Novated Lease",
+                                                                    "Operating Lease",
+                                                                    "Other Loan",
+                                                                    "Overdraft",
+                                                                    "Personal Loan",
+                                                                    "Reverse Mortgage",
+                                                                    "Term Loan",
+                                                                    "Trade Finance Loan"
+                                                                ],
+                                                                "doc": "The type of credit facility."
+                                                            },
+                                                            {
+                                                                "name": "Borrowers",
+                                                                "type": {
+                                                                    "type": "record",
+                                                                    "name": "Package",
+                                                                    "namespace": "Borrowers.LoanDetails.Application.Content",
+                                                                    "fields": [
+                                                                        {
+                                                                            "name": "Owner",
+                                                                            "type": {
+                                                                                "type": "array",
+                                                                                "items": {
+                                                                                    "type": "record",
+                                                                                    "name": "Package",
+                                                                                    "namespace": "Owner.Borrowers.LoanDetails.Application.Content",
+                                                                                    "fields": [
+                                                                                        {
+                                                                                            "name": "Percent",
+                                                                                            "type": "double",
+                                                                                            "doc": "Captures the percentage of the item that referenced party owns or is responsible for."
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "x_Party",
+                                                                                            "type": "string",
+                                                                                            "doc": "Contains a reference to a party that is an owner of the item, or has a similar relationship such as a borrower or beneficiary."
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            },
+                                                                            "doc": "Container that associates a reference to an owner or other responsible party with the percentage of the item that they own or are responsible for."
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "doc": "Identifies the parties that are prospective borrowers on this loan account."
+                                                            },
+                                                            {
+                                                                "name": "LendingPurpose",
+                                                                "type": {
+                                                                    "type": "array",
+                                                                    "items": {
+                                                                        "type": "record",
+                                                                        "name": "Package",
+                                                                        "namespace": "LendingPurpose.LoanDetails.Application.Content",
+                                                                        "fields": [
+                                                                            {
+                                                                                "name": "IncludesRefinancing",
+                                                                                "type": "enum",
+                                                                                "symbols": [
+                                                                                    "No",
+                                                                                    "Yes"
+                                                                                ],
+                                                                                "doc": "Whether all or part of this credit facility will be used to refinance in full or in part one or many existing credit facilities."
+                                                                            },
+                                                                            {
+                                                                                "name": "LenderCode",
+                                                                                "type": "string",
+                                                                                "doc": "Captures the lender specified code for this purpose for which the loan funds will be used by the applicant."
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "doc": "Details of the purpose for which the applicant intends to use the loan funds."
+                                                            },
+                                                            {
+                                                                "name": "LoanPurpose",
+                                                                "type": {
+                                                                    "type": "record",
+                                                                    "name": "Package",
+                                                                    "namespace": "LoanPurpose.LoanDetails.Application.Content",
+                                                                    "fields": [
+                                                                        {
+                                                                            "name": "PrimaryPurpose",
+                                                                            "type": "enum",
+                                                                            "symbols": [
+                                                                                "Business",
+                                                                                "Investment Non Residential",
+                                                                                "Investment Residential",
+                                                                                "Owner Occupied",
+                                                                                "Personal"
+                                                                            ],
+                                                                            "doc": "Captures the primary purpose for which the loan funds will be used by the applicant. Categories reflect the categories used in classifying a loan as regulated or unregulated under the NCCP."
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "doc": "Contains information about the main purpose for which the applicant intends to use the loan funds."
+                                                            },
+                                                            {
+                                                                "name": "ProposedRepayment",
+                                                                "type": {
+                                                                    "type": "record",
+                                                                    "name": "Package",
+                                                                    "namespace": "ProposedRepayment.LoanDetails.Application.Content",
+                                                                    "fields": [
+                                                                        {
+                                                                            "name": "RegularRepayment",
+                                                                            "type": {
+                                                                                "type": "array",
+                                                                                "items": {
+                                                                                    "type": "record",
+                                                                                    "name": "Package",
+                                                                                    "namespace": "RegularRepayment.ProposedRepayment.LoanDetails.Application.Content",
+                                                                                    "fields": [
+                                                                                        {
+                                                                                            "name": "Amount",
+                                                                                            "type": "double",
+                                                                                            "doc": "Preferred or nominated total regular repayment amount (incorporating any GST or Stamp Duty in the case of Equipment Finance Transactions)"
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "Frequency",
+                                                                                            "type": "enum",
+                                                                                            "symbols": [
+                                                                                                "Daily",
+                                                                                                "Fortnightly",
+                                                                                                "Half Yearly",
+                                                                                                "Monthly",
+                                                                                                "One Off",
+                                                                                                "Quarterly",
+                                                                                                "Seasonal",
+                                                                                                "Weekly",
+                                                                                                "Yearly"
+                                                                                            ],
+                                                                                            "doc": "Captures the applicants preferred period for making loan repayments for the loan account. Captured when the loan product selected offers a range of repayment periods, enabling the applicant to nominate a period which best suits their needs in terms of income and the desire to reduce interest over the life of the loan by accelerating the reduction of the principal balance."
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            },
+                                                                            "doc": "Container element for information associated with regular repayments"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "doc": "Contains information that specifies how the borrower(s) intend to make regular or structured repayments."
+                                                            },
+                                                            {
+                                                                "name": "Security",
+                                                                "type": {
+                                                                    "type": "array",
+                                                                    "items": {
+                                                                        "type": "record",
+                                                                        "name": "Package",
+                                                                        "namespace": "Security.LoanDetails.Application.Content",
+                                                                        "fields": [
+                                                                            {
+                                                                                "name": "x_Security",
+                                                                                "type": "string",
+                                                                                "doc": "Contains a reference to a security (real estate or non real estate asset) that is submitted with the loan application, and information about the relationship between the subject loan account and that security."
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "doc": "Contains a reference to a security property that is submitted with the loan application, and information about the relationship between the subject loan account and that security property."
+                                                            },
+                                                            {
+                                                                "name": "Term",
+                                                                "type": {
+                                                                    "type": "record",
+                                                                    "name": "Package",
+                                                                    "namespace": "Term.LoanDetails.Application.Content",
+                                                                    "fields": [
+                                                                        {
+                                                                            "name": "TotalTermDuration",
+                                                                            "type": "int",
+                                                                            "doc": "The Duration of the specified loan term, as a multiple of the Units"
+                                                                        },
+                                                                        {
+                                                                            "name": "TotalTermUnits",
+                                                                            "type": "enum",
+                                                                            "symbols": [
+                                                                                "Days",
+                                                                                "Months",
+                                                                                "Weeks",
+                                                                                "Years"
+                                                                            ],
+                                                                            "doc": "Captures the period described by the number specified for term."
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "doc": "Details of the total term of the credit product and any introductory terms, such as an interest only term (including interest only reasons) or a fixed rate term that applies for an initial period at the start of the product."
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "doc": "Information about an individual credit facility that is being applied for including but not limited to: term loans; revolving credit facilities; overdrafts; credit cards; equipment finance; commercial bills; margin loans; personal loans; and reverse mortgages."
+                                            },
+                                            {
+                                                "name": "NonRealEstateAsset",
+                                                "type": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "record",
+                                                        "name": "Package",
+                                                        "namespace": "NonRealEstateAsset.Application.Content",
+                                                        "fields": [
+                                                            {
+                                                                "name": "Transaction",
+                                                                "type": "enum",
+                                                                "symbols": [
+                                                                    "Owns",
+                                                                    "Owns Existing Mortgage",
+                                                                    "Purchasing",
+                                                                    "Sold",
+                                                                    "Transfer"
+                                                                ],
+                                                                "doc": "Indicates the current status of the applicants ownership of the property, or the transaction that is proposed by them in relation to the property."
+                                                            },
+                                                            {
+                                                                "name": "Type",
+                                                                "type": "enum",
+                                                                "symbols": [
+                                                                    "Agricultural",
+                                                                    "Aircraft",
+                                                                    "Business",
+                                                                    "Cleaning",
+                                                                    "Earth Moving, Mining and Construction",
+                                                                    "Financial Asset",
+                                                                    "Hospitality and Leisure",
+                                                                    "IT and AV Equipment",
+                                                                    "Licence",
+                                                                    "Materials Handling and Lifting",
+                                                                    "Medical",
+                                                                    "Mobile Computing",
+                                                                    "Motor Vehicle and Transport",
+                                                                    "Office Equipment",
+                                                                    "Other",
+                                                                    "Plant, Equipment and Industrial",
+                                                                    "Tools of Trade",
+                                                                    "Water Rights",
+                                                                    "Watercraft"
+                                                                ],
+                                                                "doc": "Indicates what the type of non real estate asset being described."
+                                                            },
+                                                            {
+                                                                "name": "UniqueID",
+                                                                "type": "string",
+                                                                "doc": "Unique ID"
+                                                            },
+                                                            {
+                                                                "name": "EstimatedValue",
+                                                                "type": {
+                                                                    "type": "record",
+                                                                    "name": "Package",
+                                                                    "namespace": "EstimatedValue.NonRealEstateAsset.Application.Content",
+                                                                    "fields": [
+                                                                        {
+                                                                            "name": "EstimateBasis",
+                                                                            "type": "enum",
+                                                                            "symbols": [
+                                                                                "Applicant Estimate",
+                                                                                "Certified Valuation",
+                                                                                "Contract of Sale",
+                                                                                "Price Guide"
+                                                                            ],
+                                                                            "doc": "Indicates whether the estimate was based on the valuation of the applicant or a certified valuer."
+                                                                        },
+                                                                        {
+                                                                            "name": "Value",
+                                                                            "type": "double",
+                                                                            "doc": "The estimated current market value of the non real estate asset."
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "doc": "The estimated value of the asset"
+                                                            },
+                                                            {
+                                                                "name": "MotorVehicle",
+                                                                "type": [
+                                                                    "null",
+                                                                    {
+                                                                        "type": "record",
+                                                                        "name": "Package",
+                                                                        "namespace": "MotorVehicle.NonRealEstateAsset.Application.Content",
+                                                                        "fields": [
+                                                                            {
+                                                                                "name": "Make",
+                                                                                "type": "string",
+                                                                                "doc": "Captures the make of the vehicle, such as Holden"
+                                                                            },
+                                                                            {
+                                                                                "name": "Model",
+                                                                                "type": "string",
+                                                                                "doc": "Captures the model of the vehicle"
+                                                                            },
+                                                                            {
+                                                                                "name": "RegistrationNumber",
+                                                                                "type": "string",
+                                                                                "doc": "Registration identifier for the asset e.g. license plate number."
+                                                                            },
+                                                                            {
+                                                                                "name": "Year",
+                                                                                "type": "string",
+                                                                                "doc": "Captures the year in which the vehicle was first registered or the model year."
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ],
+                                                                "doc": "Contains information about an asset that is a motor vehicle.",
+                                                                "default": null
+                                                            },
+                                                            {
+                                                                "name": "PercentOwned",
+                                                                "type": {
+                                                                    "type": "record",
+                                                                    "name": "Package",
+                                                                    "namespace": "PercentOwned.NonRealEstateAsset.Application.Content",
+                                                                    "fields": [
+                                                                        {
+                                                                            "name": "Owner",
+                                                                            "type": {
+                                                                                "type": "array",
+                                                                                "items": {
+                                                                                    "type": "record",
+                                                                                    "name": "Package",
+                                                                                    "namespace": "Owner.PercentOwned.NonRealEstateAsset.Application.Content",
+                                                                                    "fields": [
+                                                                                        {
+                                                                                            "name": "Percent",
+                                                                                            "type": "double",
+                                                                                            "doc": "Captures the percentage of the item that referenced party owns or is responsible for. "
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "x_Party",
+                                                                                            "type": "string",
+                                                                                            "doc": "Contains a reference to a party that is an owner of the item, or has a similar relationship such as a borrower or beneficiary. "
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            },
+                                                                            "doc": "Container that associates a reference to an owner or other responsible party with the percentage of the item that they own or are responsible for."
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "doc": "An asset may be owned by one or more parties, typically the applicants, so there may be more than one owner referenced. An asset may also be partially owned by a non applicant, such as an applicant s spouse, in which case the third party owner may be referenced, or less than 100% ownership of the asset may be assigned. If the asset is to be purchased, then this indicates the expected ownership arrangement post settlement"
+                                                            },
+                                                            {
+                                                                "name": "FinancialAsset",
+                                                                "type": [
+                                                                    "null",
+                                                                    {
+                                                                        "type": "record",
+                                                                        "name": "Package",
+                                                                        "namespace": "FinancialAsset.NonRealEstateAsset.Application.Content",
+                                                                        "fields": [
+                                                                            {
+                                                                                "name": "Type",
+                                                                                "type": "enum",
+                                                                                "symbols": [
+                                                                                    "Cash",
+                                                                                    "Investment",
+                                                                                    "KiwiSaver",
+                                                                                    "Managed Funds",
+                                                                                    "Other",
+                                                                                    "Pension Account",
+                                                                                    "Receivables",
+                                                                                    "Savings Account",
+                                                                                    "Shares and Debentures",
+                                                                                    "Superannuation",
+                                                                                    "Term Deposit",
+                                                                                    "Transaction Account",
+                                                                                    "Trust Beneficial Interest"
+                                                                                ],
+                                                                                "doc": "The type of financial asset"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ],
+                                                                "doc": "Captures the details of a financial account asset or security e.g. Cash, cash equivalents, and accounts at financial institutions",
+                                                                "default": null
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "doc": "Contains details about an asset item that is not real estate, such as a term deposit account."
+                                            },
+                                            {
+                                                "name": "PersonApplicant",
+                                                "type": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "record",
+                                                        "name": "Package",
+                                                        "namespace": "PersonApplicant.Application.Content",
+                                                        "fields": [
+                                                            {
+                                                                "name": "ApplicantType",
+                                                                "type": "enum",
+                                                                "symbols": [
+                                                                    "Borrower",
+                                                                    "Borrower and Guarantor",
+                                                                    "Guarantor"
+                                                                ],
+                                                                "doc": "Whether the loan party is an borrower or guarantor"
+                                                            },
+                                                            {
+                                                                "name": "Citizenship",
+                                                                "type": "enum",
+                                                                "symbols": [
+                                                                    "AD",
+                                                                    "AE",
+                                                                    "AF",
+                                                                    "AG",
+                                                                    "AI",
+                                                                    "AL",
+                                                                    "AM",
+                                                                    "AO",
+                                                                    "AQ",
+                                                                    "AR",
+                                                                    "AS",
+                                                                    "AT",
+                                                                    "AU",
+                                                                    "AW",
+                                                                    "AX",
+                                                                    "AZ",
+                                                                    "BA",
+                                                                    "BB",
+                                                                    "BD",
+                                                                    "BE",
+                                                                    "BF",
+                                                                    "BG",
+                                                                    "BH",
+                                                                    "BI",
+                                                                    "BJ",
+                                                                    "BL",
+                                                                    "BM",
+                                                                    "BN",
+                                                                    "BO",
+                                                                    "BQ",
+                                                                    "BR",
+                                                                    "BS",
+                                                                    "BT",
+                                                                    "BV",
+                                                                    "BW",
+                                                                    "BY",
+                                                                    "BZ",
+                                                                    "CA",
+                                                                    "CC",
+                                                                    "CD",
+                                                                    "CF",
+                                                                    "CG",
+                                                                    "CH",
+                                                                    "CI",
+                                                                    "CK",
+                                                                    "CL",
+                                                                    "CM",
+                                                                    "CN",
+                                                                    "CO",
+                                                                    "CR",
+                                                                    "CU",
+                                                                    "CV",
+                                                                    "CW",
+                                                                    "CX",
+                                                                    "CY",
+                                                                    "CZ",
+                                                                    "DE",
+                                                                    "DJ",
+                                                                    "DK",
+                                                                    "DM",
+                                                                    "DO",
+                                                                    "DZ",
+                                                                    "EC",
+                                                                    "EE",
+                                                                    "EG",
+                                                                    "EH",
+                                                                    "ER",
+                                                                    "ES",
+                                                                    "ET",
+                                                                    "FI",
+                                                                    "FJ",
+                                                                    "FK",
+                                                                    "FM",
+                                                                    "FO",
+                                                                    "FR",
+                                                                    "GA",
+                                                                    "GB",
+                                                                    "GD",
+                                                                    "GE",
+                                                                    "GF",
+                                                                    "GG",
+                                                                    "GH",
+                                                                    "GI",
+                                                                    "GL",
+                                                                    "GM",
+                                                                    "GN",
+                                                                    "GP",
+                                                                    "GQ",
+                                                                    "GR",
+                                                                    "GS",
+                                                                    "GT",
+                                                                    "GU",
+                                                                    "GW",
+                                                                    "GY",
+                                                                    "HK",
+                                                                    "HM",
+                                                                    "HN",
+                                                                    "HR",
+                                                                    "HT",
+                                                                    "HU",
+                                                                    "ID",
+                                                                    "IE",
+                                                                    "IL",
+                                                                    "IM",
+                                                                    "IN",
+                                                                    "IO",
+                                                                    "IQ",
+                                                                    "IR",
+                                                                    "IS",
+                                                                    "IT",
+                                                                    "JE",
+                                                                    "JM",
+                                                                    "JO",
+                                                                    "JP",
+                                                                    "KE",
+                                                                    "KG",
+                                                                    "KH",
+                                                                    "KI",
+                                                                    "KM",
+                                                                    "KN",
+                                                                    "KP",
+                                                                    "KR",
+                                                                    "KW",
+                                                                    "KY",
+                                                                    "KZ",
+                                                                    "LA",
+                                                                    "LB",
+                                                                    "LC",
+                                                                    "LI",
+                                                                    "LK",
+                                                                    "LR",
+                                                                    "LS",
+                                                                    "LT",
+                                                                    "LU",
+                                                                    "LV",
+                                                                    "LY",
+                                                                    "MA",
+                                                                    "MC",
+                                                                    "MD",
+                                                                    "ME",
+                                                                    "MF",
+                                                                    "MG",
+                                                                    "MH",
+                                                                    "MK",
+                                                                    "ML",
+                                                                    "MM",
+                                                                    "MN",
+                                                                    "MO",
+                                                                    "MP",
+                                                                    "MQ",
+                                                                    "MR",
+                                                                    "MS",
+                                                                    "MT",
+                                                                    "MU",
+                                                                    "MV",
+                                                                    "MW",
+                                                                    "MX",
+                                                                    "MY",
+                                                                    "MZ",
+                                                                    "NA",
+                                                                    "NC",
+                                                                    "NE",
+                                                                    "NF",
+                                                                    "NG",
+                                                                    "NI",
+                                                                    "NL",
+                                                                    "NO",
+                                                                    "NP",
+                                                                    "NR",
+                                                                    "NU",
+                                                                    "NZ",
+                                                                    "OM",
+                                                                    "PA",
+                                                                    "PE",
+                                                                    "PF",
+                                                                    "PG",
+                                                                    "PH",
+                                                                    "PK",
+                                                                    "PL",
+                                                                    "PM",
+                                                                    "PN",
+                                                                    "PR",
+                                                                    "PS",
+                                                                    "PT",
+                                                                    "PW",
+                                                                    "PY",
+                                                                    "QA",
+                                                                    "RE",
+                                                                    "RO",
+                                                                    "RS",
+                                                                    "RU",
+                                                                    "RW",
+                                                                    "SBA",
+                                                                    "SC",
+                                                                    "SD",
+                                                                    "SE",
+                                                                    "SG",
+                                                                    "SH",
+                                                                    "SI",
+                                                                    "SJ",
+                                                                    "SK",
+                                                                    "SL",
+                                                                    "SM",
+                                                                    "SN",
+                                                                    "SO",
+                                                                    "SR",
+                                                                    "SS",
+                                                                    "ST",
+                                                                    "SV",
+                                                                    "SX",
+                                                                    "SY",
+                                                                    "SZ",
+                                                                    "TC",
+                                                                    "TD",
+                                                                    "TF",
+                                                                    "TG",
+                                                                    "TH",
+                                                                    "TJ",
+                                                                    "TK",
+                                                                    "TL",
+                                                                    "TM",
+                                                                    "TN",
+                                                                    "TO",
+                                                                    "TR",
+                                                                    "TT",
+                                                                    "TV",
+                                                                    "TW",
+                                                                    "TZ",
+                                                                    "UA",
+                                                                    "UG",
+                                                                    "UM",
+                                                                    "US",
+                                                                    "UY",
+                                                                    "UZ",
+                                                                    "VA",
+                                                                    "VC",
+                                                                    "VE",
+                                                                    "VG",
+                                                                    "VI",
+                                                                    "VN",
+                                                                    "VU",
+                                                                    "WF",
+                                                                    "WS",
+                                                                    "XK",
+                                                                    "YE",
+                                                                    "YT",
+                                                                    "ZA",
+                                                                    "ZM",
+                                                                    "ZW"
+                                                                ],
+                                                                "doc": "The country that the person is a citizen of."
+                                                            },
+                                                            {
+                                                                "name": "CountryOfBirth",
+                                                                "type": "enum",
+                                                                "symbols": [
+                                                                    "AD",
+                                                                    "AE",
+                                                                    "AF",
+                                                                    "AG",
+                                                                    "AI",
+                                                                    "AL",
+                                                                    "AM",
+                                                                    "AO",
+                                                                    "AQ",
+                                                                    "AR",
+                                                                    "AS",
+                                                                    "AT",
+                                                                    "AU",
+                                                                    "AW",
+                                                                    "AX",
+                                                                    "AZ",
+                                                                    "BA",
+                                                                    "BB",
+                                                                    "BD",
+                                                                    "BE",
+                                                                    "BF",
+                                                                    "BG",
+                                                                    "BH",
+                                                                    "BI",
+                                                                    "BJ",
+                                                                    "BL",
+                                                                    "BM",
+                                                                    "BN",
+                                                                    "BO",
+                                                                    "BQ",
+                                                                    "BR",
+                                                                    "BS",
+                                                                    "BT",
+                                                                    "BV",
+                                                                    "BW",
+                                                                    "BY",
+                                                                    "BZ",
+                                                                    "CA",
+                                                                    "CC",
+                                                                    "CD",
+                                                                    "CF",
+                                                                    "CG",
+                                                                    "CH",
+                                                                    "CI",
+                                                                    "CK",
+                                                                    "CL",
+                                                                    "CM",
+                                                                    "CN",
+                                                                    "CO",
+                                                                    "CR",
+                                                                    "CU",
+                                                                    "CV",
+                                                                    "CW",
+                                                                    "CX",
+                                                                    "CY",
+                                                                    "CZ",
+                                                                    "DE",
+                                                                    "DJ",
+                                                                    "DK",
+                                                                    "DM",
+                                                                    "DO",
+                                                                    "DZ",
+                                                                    "EC",
+                                                                    "EE",
+                                                                    "EG",
+                                                                    "EH",
+                                                                    "ER",
+                                                                    "ES",
+                                                                    "ET",
+                                                                    "FI",
+                                                                    "FJ",
+                                                                    "FK",
+                                                                    "FM",
+                                                                    "FO",
+                                                                    "FR",
+                                                                    "GA",
+                                                                    "GB",
+                                                                    "GD",
+                                                                    "GE",
+                                                                    "GF",
+                                                                    "GG",
+                                                                    "GH",
+                                                                    "GI",
+                                                                    "GL",
+                                                                    "GM",
+                                                                    "GN",
+                                                                    "GP",
+                                                                    "GQ",
+                                                                    "GR",
+                                                                    "GS",
+                                                                    "GT",
+                                                                    "GU",
+                                                                    "GW",
+                                                                    "GY",
+                                                                    "HK",
+                                                                    "HM",
+                                                                    "HN",
+                                                                    "HR",
+                                                                    "HT",
+                                                                    "HU",
+                                                                    "ID",
+                                                                    "IE",
+                                                                    "IL",
+                                                                    "IM",
+                                                                    "IN",
+                                                                    "IO",
+                                                                    "IQ",
+                                                                    "IR",
+                                                                    "IS",
+                                                                    "IT",
+                                                                    "JE",
+                                                                    "JM",
+                                                                    "JO",
+                                                                    "JP",
+                                                                    "KE",
+                                                                    "KG",
+                                                                    "KH",
+                                                                    "KI",
+                                                                    "KM",
+                                                                    "KN",
+                                                                    "KP",
+                                                                    "KR",
+                                                                    "KW",
+                                                                    "KY",
+                                                                    "KZ",
+                                                                    "LA",
+                                                                    "LB",
+                                                                    "LC",
+                                                                    "LI",
+                                                                    "LK",
+                                                                    "LR",
+                                                                    "LS",
+                                                                    "LT",
+                                                                    "LU",
+                                                                    "LV",
+                                                                    "LY",
+                                                                    "MA",
+                                                                    "MC",
+                                                                    "MD",
+                                                                    "ME",
+                                                                    "MF",
+                                                                    "MG",
+                                                                    "MH",
+                                                                    "MK",
+                                                                    "ML",
+                                                                    "MM",
+                                                                    "MN",
+                                                                    "MO",
+                                                                    "MP",
+                                                                    "MQ",
+                                                                    "MR",
+                                                                    "MS",
+                                                                    "MT",
+                                                                    "MU",
+                                                                    "MV",
+                                                                    "MW",
+                                                                    "MX",
+                                                                    "MY",
+                                                                    "MZ",
+                                                                    "NA",
+                                                                    "NC",
+                                                                    "NE",
+                                                                    "NF",
+                                                                    "NG",
+                                                                    "NI",
+                                                                    "NL",
+                                                                    "NO",
+                                                                    "NP",
+                                                                    "NR",
+                                                                    "NU",
+                                                                    "NZ",
+                                                                    "OM",
+                                                                    "PA",
+                                                                    "PE",
+                                                                    "PF",
+                                                                    "PG",
+                                                                    "PH",
+                                                                    "PK",
+                                                                    "PL",
+                                                                    "PM",
+                                                                    "PN",
+                                                                    "PR",
+                                                                    "PS",
+                                                                    "PT",
+                                                                    "PW",
+                                                                    "PY",
+                                                                    "QA",
+                                                                    "RE",
+                                                                    "RO",
+                                                                    "RS",
+                                                                    "RU",
+                                                                    "RW",
+                                                                    "SBA",
+                                                                    "SC",
+                                                                    "SD",
+                                                                    "SE",
+                                                                    "SG",
+                                                                    "SH",
+                                                                    "SI",
+                                                                    "SJ",
+                                                                    "SK",
+                                                                    "SL",
+                                                                    "SM",
+                                                                    "SN",
+                                                                    "SO",
+                                                                    "SR",
+                                                                    "SS",
+                                                                    "ST",
+                                                                    "SV",
+                                                                    "SX",
+                                                                    "SY",
+                                                                    "SZ",
+                                                                    "TC",
+                                                                    "TD",
+                                                                    "TF",
+                                                                    "TG",
+                                                                    "TH",
+                                                                    "TJ",
+                                                                    "TK",
+                                                                    "TL",
+                                                                    "TM",
+                                                                    "TN",
+                                                                    "TO",
+                                                                    "TR",
+                                                                    "TT",
+                                                                    "TV",
+                                                                    "TW",
+                                                                    "TZ",
+                                                                    "UA",
+                                                                    "UG",
+                                                                    "UM",
+                                                                    "US",
+                                                                    "UY",
+                                                                    "UZ",
+                                                                    "VA",
+                                                                    "VC",
+                                                                    "VE",
+                                                                    "VG",
+                                                                    "VI",
+                                                                    "VN",
+                                                                    "VU",
+                                                                    "WF",
+                                                                    "WS",
+                                                                    "XK",
+                                                                    "YE",
+                                                                    "YT",
+                                                                    "ZA",
+                                                                    "ZM",
+                                                                    "ZW"
+                                                                ],
+                                                                "doc": "The country in which this applicant was born."
+                                                            },
+                                                            {
+                                                                "name": "DateOfBirth",
+                                                                "type": "string",
+                                                                "doc": "Captures the date of birth for the applicant."
+                                                            },
+                                                            {
+                                                                "name": "FirstHomeBuyer",
+                                                                "type": "enum",
+                                                                "symbols": [
+                                                                    "Yes",
+                                                                    "No"
+                                                                ],
+                                                                "doc": "The person should indicate whether they are a first home buyer in accordance with the State Revenue Office s definition of a first home buyer."
+                                                            },
+                                                            {
+                                                                "name": "Gender",
+                                                                "type": "enum",
+                                                                "symbols": [
+                                                                    "Female",
+                                                                    "Male",
+                                                                    "Non-binary",
+                                                                    "Undisclosed"
+                                                                ],
+                                                                "doc": "Indicates the gender of the applicant."
+                                                            },
+                                                            {
+                                                                "name": "MaritalStatus",
+                                                                "type": "enum",
+                                                                "symbols": [
+                                                                    "De Facto",
+                                                                    "Divorced",
+                                                                    "Married",
+                                                                    "Separated",
+                                                                    "Single",
+                                                                    "Unknown",
+                                                                    "Widowed"
+                                                                ],
+                                                                "doc": "The marital status of the applicant should be indicated"
+                                                            },
+                                                            {
+                                                                "name": "PrimaryApplicant",
+                                                                "type": [
+                                                                    "null",
+                                                                    "enum"
+                                                                ],
+                                                                "symbols": [
+                                                                    "Yes",
+                                                                    "No"
+                                                                ],
+                                                                "doc": "Indicates whether the lender should consider the party to be the primary applicant when processing the loan application. The significance of the primary applicant to the application varies from lender to lender.",
+                                                                "default": null
+                                                            },
+                                                            {
+                                                                "name": "UniqueID",
+                                                                "type": "string",
+                                                                "doc": "Unique ID"
+                                                            },
+                                                            {
+                                                                "name": "x_Household",
+                                                                "type": "string",
+                                                                "doc": "Links to a Household element"
+                                                            },
+                                                            {
+                                                                "name": "Contact",
+                                                                "type": {
+                                                                    "type": "record",
+                                                                    "name": "Package",
+                                                                    "namespace": "Contact.PersonApplicant.Application.Content",
+                                                                    "fields": [
+                                                                        {
+                                                                            "name": "CurrentAddress",
+                                                                            "type": {
+                                                                                "type": "record",
+                                                                                "name": "Package",
+                                                                                "namespace": "CurrentAddress.Contact.PersonApplicant.Application.Content",
+                                                                                "fields": [
+                                                                                    {
+                                                                                        "name": "HousingStatus",
+                                                                                        "type": "enum",
+                                                                                        "symbols": [
+                                                                                            "Boarding",
+                                                                                            "Caravan",
+                                                                                            "Other",
+                                                                                            "Own Home",
+                                                                                            "Own Home Mortgage",
+                                                                                            "Renting",
+                                                                                            "Supplied by Employer",
+                                                                                            "With Parents"
+                                                                                        ],
+                                                                                        "doc": "Indicates the housing status of this applicant e.g. Whether they are boarding, renting, own their own home, living with parents, other, etc."
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "StartDate",
+                                                                                        "type": "string",
+                                                                                        "doc": "The date that the applicant moved to the residential address"
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "x_ResidentialAddress",
+                                                                                        "type": "string",
+                                                                                        "doc": "Reference to the applicant s current residential address"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "doc": "The current address details for the applicant"
+                                                                        },
+                                                                        {
+                                                                            "name": "EmailAddress",
+                                                                            "type": {
+                                                                                "type": "array",
+                                                                                "items": {
+                                                                                    "type": "record",
+                                                                                    "name": "Package",
+                                                                                    "namespace": "EmailAddress.Contact.PersonApplicant.Application.Content",
+                                                                                    "fields": [
+                                                                                        {
+                                                                                            "name": "Email",
+                                                                                            "type": "string",
+                                                                                            "doc": "Type inferred from '\"chrisaustralianactorsassociation.com.au\"'"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            },
+                                                                            "doc": "Type inferred from '[{\"Email\":\"chrisaustralianactorsassociation.com.au\"}]'"
+                                                                        },
+                                                                        {
+                                                                            "name": "HomePhone",
+                                                                            "type": {
+                                                                                "type": "record",
+                                                                                "name": "Package",
+                                                                                "namespace": "HomePhone.Contact.PersonApplicant.Application.Content",
+                                                                                "fields": [
+                                                                                    {
+                                                                                        "name": "AustralianDialingCode",
+                                                                                        "type": "string",
+                                                                                        "doc": "Type inferred from '\"07\"'"
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "Number",
+                                                                                        "type": "string",
+                                                                                        "doc": "Type inferred from '\"98765432\"'"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "doc": "Type inferred from '{\"AustralianDialingCode\":\"07\",\"Number\":\"98765432\"}'"
+                                                                        },
+                                                                        {
+                                                                            "name": "Mobile",
+                                                                            "type": {
+                                                                                "type": "record",
+                                                                                "name": "Package",
+                                                                                "namespace": "Mobile.Contact.PersonApplicant.Application.Content",
+                                                                                "fields": [
+                                                                                    {
+                                                                                        "name": "AustralianDialingCode",
+                                                                                        "type": "string",
+                                                                                        "doc": "Type inferred from '\"04\"'"
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "Number",
+                                                                                        "type": "string",
+                                                                                        "doc": "Type inferred from '\"11223344\"'"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "doc": "Type inferred from '{\"AustralianDialingCode\":\"04\",\"Number\":\"11223344\"}'"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "doc": "Container element for the applicant contact details"
+                                                            },
+                                                            {
+                                                                "name": "Employment",
+                                                                "type": {
+                                                                    "type": "array",
+                                                                    "items": {
+                                                                        "type": "record",
+                                                                        "name": "Package",
+                                                                        "namespace": "Employment.PersonApplicant.Application.Content",
+                                                                        "fields": [
+                                                                            {
+                                                                                "name": "SelfEmployed",
+                                                                                "type": {
+                                                                                    "type": "record",
+                                                                                    "name": "Package",
+                                                                                    "namespace": "SelfEmployed.Employment.PersonApplicant.Application.Content",
+                                                                                    "fields": [
+                                                                                        {
+                                                                                            "name": "ANZSCOOccupationCode",
+                                                                                            "type": "string",
+                                                                                            "doc": "The ANZSCO occupation code specifying the person s role or occupation in this employment. This attribute is restricted to the list of ANZSCO occupation codes published by the ABS on 26/03/2013 that superseded the ASCO Occupation Codes, although the superseded codes still remain in common use."
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "Occupation",
+                                                                                            "type": "string",
+                                                                                            "doc": "Text description of the person s role or occupation for this employment"
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "x_Employer",
+                                                                                            "type": "string",
+                                                                                            "doc": "The applicant should capture their company details for this instance of self employment."
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "BusinessIncomePrevious",
+                                                                                            "type": {
+                                                                                                "type": "record",
+                                                                                                "name": "Package",
+                                                                                                "namespace": "BusinessIncomePrevious.SelfEmployed.Employment.PersonApplicant.Application.Content",
+                                                                                                "fields": [
+                                                                                                    {
+                                                                                                        "name": "ProfitAfterTax",
+                                                                                                        "type": "double",
+                                                                                                        "doc": "This item is now deprecated and will be deleted in a future release. BusinessIncome element must be used instead. Captures the profit after tax for the specified financial year."
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "name": "ProfitBeforeTax",
+                                                                                                        "type": "double",
+                                                                                                        "doc": "This item is now deprecated and will be deleted in a future release. BusinessIncome element must be used instead. Captures the net profit/profit before tax for the specified financial year."
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "name": "StartDate",
+                                                                                                        "type": "string",
+                                                                                                        "doc": "This item is now deprecated and will be deleted in a future release. BusinessIncome element must be used instead. The start date for the stated income, generally the start of a financial year."
+                                                                                                    }
+                                                                                                ]
+                                                                                            },
+                                                                                            "doc": "This item is now deprecated and will be deleted in a future release. BusinessIncome element must be used instead. Details of the share of the income or income related amounts in the previous financial year (immediately preceding the most recent full financial year), attributable to this applicant (for year = current year 2)."
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "BusinessIncomeRecent",
+                                                                                            "type": {
+                                                                                                "type": "record",
+                                                                                                "name": "Package",
+                                                                                                "namespace": "BusinessIncomeRecent.SelfEmployed.Employment.PersonApplicant.Application.Content",
+                                                                                                "fields": [
+                                                                                                    {
+                                                                                                        "name": "ProfitAfterTax",
+                                                                                                        "type": "double",
+                                                                                                        "doc": "This item is now deprecated and will be deleted in a future release. BusinessIncome element must be used instead. Captures the profit after tax for the specified financial year."
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "name": "ProfitBeforeTax",
+                                                                                                        "type": "double",
+                                                                                                        "doc": "This item is now deprecated and will be deleted in a future release. BusinessIncome element must be used instead. Captures the net profit/profit before tax for the specified financial year."
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "name": "StartDate",
+                                                                                                        "type": "string",
+                                                                                                        "doc": "This item is now deprecated and will be deleted in a future release. BusinessIncome element must be used instead. The start date for the stated income, generally the start of a financial year"
+                                                                                                    }
+                                                                                                ]
+                                                                                            },
+                                                                                            "doc": "This item is now deprecated and will be deleted in a future release. BusinessIncome element must be used instead. Details of the share of the income or income related amounts in the most recent full financial year, attributable to this applicant (year = current year 1)."
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                "doc": "Self employed refers to people who work for themselves in either wholly owned or part owned organisations, including when operating as a (paid) Director. The organisation may or may not employ other people."
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "doc": "Contains information about the persons current or previous employment."
+                                                            },
+                                                            {
+                                                                "name": "PersonName",
+                                                                "type": {
+                                                                    "type": "record",
+                                                                    "name": "Package",
+                                                                    "namespace": "PersonName.PersonApplicant.Application.Content",
+                                                                    "fields": [
+                                                                        {
+                                                                            "name": "FirstName",
+                                                                            "type": "string"
+                                                                        },
+                                                                        {
+                                                                            "name": "NameTitle",
+                                                                            "type": "enum",
+                                                                            "symbols": [
+                                                                                "Dr",
+                                                                                "Hon",
+                                                                                "Lady",
+                                                                                "Miss",
+                                                                                "Mr",
+                                                                                "Mrs",
+                                                                                "Ms",
+                                                                                "Mx",
+                                                                                "Other",
+                                                                                "Prof",
+                                                                                "R Hon",
+                                                                                "Rev",
+                                                                                "Sir"
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "name": "Surname",
+                                                                            "type": "string"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "doc": "The name of the person applicant."
+                                                            },
+                                                            {
+                                                                "name": "RelationshipToPrimaryApplicant",
+                                                                "type": [
+                                                                    "null",
+                                                                    "enum"
+                                                                ],
+                                                                "symbols": [
+                                                                    "Child",
+                                                                    "Friend",
+                                                                    "Grandparent",
+                                                                    "Other Relative",
+                                                                    "Parent",
+                                                                    "Sibling",
+                                                                    "Spouse"
+                                                                ],
+                                                                "doc": "The relationship between this person and the primary applicant (specifically for guarantor).",
+                                                                "default": null
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "doc": "Contains applicant details where the applicant is a person, being either a borrower or a guarantor, and may be acting for a Trust."
+                                            },
+                                            {
+                                                "name": "RealEstateAsset",
+                                                "type": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "record",
+                                                        "name": "Package",
+                                                        "namespace": "RealEstateAsset.Application.Content",
+                                                        "fields": [
+                                                            {
+                                                                "name": "Transaction",
+                                                                "type": "enum",
+                                                                "symbols": [
+                                                                    "Owns",
+                                                                    "Owns Existing Mortgage",
+                                                                    "Purchasing",
+                                                                    "Sold",
+                                                                    "Transfer"
+                                                                ],
+                                                                "doc": "Indicates the current status of the applicants ownership of the property, or the transaction that is proposed by them in relation to the property."
+                                                            },
+                                                            {
+                                                                "name": "UniqueID",
+                                                                "type": "string",
+                                                                "doc": "Unique ID"
+                                                            },
+                                                            {
+                                                                "name": "EstimatedValue",
+                                                                "type": {
+                                                                    "type": "record",
+                                                                    "name": "Package",
+                                                                    "namespace": "EstimatedValue.RealEstateAsset.Application.Content",
+                                                                    "fields": [
+                                                                        {
+                                                                            "name": "EstimateBasis",
+                                                                            "type": "enum",
+                                                                            "symbols": [
+                                                                                "Applicant Estimate",
+                                                                                "Bank Assessment",
+                                                                                "Certified Valuation",
+                                                                                "Contract of Sale",
+                                                                                "Electronic Valuation",
+                                                                                "Rates Notice",
+                                                                                "RP Data",
+                                                                                "Valocity"
+                                                                            ],
+                                                                            "doc": "Indicates whether the estimate was based on the valuation of the applicant or a certified valuer."
+                                                                        },
+                                                                        {
+                                                                            "name": "Value",
+                                                                            "type": "double",
+                                                                            "doc": "The estimated value of the real estate."
+                                                                        },
+                                                                        {
+                                                                            "name": "EstimateMethodology",
+                                                                            "type": [
+                                                                                "null",
+                                                                                "enum"
+                                                                            ],
+                                                                            "symbols": [
+                                                                                "Completed Construction Value",
+                                                                                "Current Market Value"
+                                                                            ],
+                                                                            "doc": "The methodology used for estimating the value.",
+                                                                            "default": null
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "doc": "Contains details about the estimated value of the property"
+                                                            },
+                                                            {
+                                                                "name": "PercentOwned",
+                                                                "type": [
+                                                                    "null",
+                                                                    {
+                                                                        "type": "record",
+                                                                        "name": "Package",
+                                                                        "namespace": "PercentOwned.RealEstateAsset.Application.Content",
+                                                                        "fields": [
+                                                                            {
+                                                                                "name": "Owner",
+                                                                                "type": {
+                                                                                    "type": "array",
+                                                                                    "items": {
+                                                                                        "type": "record",
+                                                                                        "name": "Package",
+                                                                                        "namespace": "Owner.PercentOwned.RealEstateAsset.Application.Content",
+                                                                                        "fields": [
+                                                                                            {
+                                                                                                "name": "Percent",
+                                                                                                "type": "double"
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "x_Party",
+                                                                                                "type": "string",
+                                                                                                "doc": "Contains a reference to a party that is an owner of the item, or has a similar relationship such as a borrower or beneficiary."
+                                                                                            }
+                                                                                        ]
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ],
+                                                                "doc": "An asset may be owned by one or more parties, typically the applicants, so there may be more than one owner referenced. An asset may also be partially owned by a non applicant, such as an applicant s spouse, in which case the third party owner may be referenced, or less than 100% ownership of the asset may be assigned. If the asset is to be purchased, then this indicates the expected ownership arrangement post settlement. If the percentage ownership is not shown, then ownership is assumed to be in equal parts.",
+                                                                "default": null
+                                                            },
+                                                            {
+                                                                "name": "Occupancy",
+                                                                "type": [
+                                                                    "null",
+                                                                    "enum"
+                                                                ],
+                                                                "symbols": [
+                                                                    "Non Owner",
+                                                                    "Owner Primary",
+                                                                    "Owner Secondary"
+                                                                ],
+                                                                "doc": "Indicates who occupies the dwelling on the property. Where the property is being purchased, this is the purchaser s intention as to who will occupy the dwelling after the purchase completes.",
+                                                                "default": null
+                                                            },
+                                                            {
+                                                                "name": "PrimaryPurpose",
+                                                                "type": [
+                                                                    "null",
+                                                                    "enum"
+                                                                ],
+                                                                "symbols": [
+                                                                    "Business",
+                                                                    "Investment",
+                                                                    "Owner Occupied"
+                                                                ],
+                                                                "doc": "Indicates the primary or predominant purpose for which the owners hold the property.",
+                                                                "default": null
+                                                            },
+                                                            {
+                                                                "name": "x_Address",
+                                                                "type": [
+                                                                    "null",
+                                                                    "string"
+                                                                ],
+                                                                "doc": "Address should capture the location details of real estate asset.",
+                                                                "default": null
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "doc": "Contains information about an asset which is real property."
+                                            },
+                                            {
+                                                "name": "RelatedCompany",
+                                                "type": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "record",
+                                                        "name": "Package",
+                                                        "namespace": "RelatedCompany.Application.Content",
+                                                        "fields": [
+                                                            {
+                                                                "name": "ABN",
+                                                                "type": "string",
+                                                                "doc": "The ABN of the related company"
+                                                            },
+                                                            {
+                                                                "name": "BusinessName",
+                                                                "type": "string",
+                                                                "doc": "The business name or trading name of the company"
+                                                            },
+                                                            {
+                                                                "name": "BusinessStructure",
+                                                                "type": "enum",
+                                                                "symbols": [
+                                                                    "Company",
+                                                                    "Partnership",
+                                                                    "Sole Trader",
+                                                                    "Trust"
+                                                                ],
+                                                                "doc": "Legal structure of this business (only populated where this applicant is a Business Enterprise)."
+                                                            },
+                                                            {
+                                                                "name": "UniqueID",
+                                                                "type": "string",
+                                                                "doc": "Unique ID"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "doc": "A business enterprise (including company, sole trader, partnership, trust, or government department) that is not an applicant but has a role in some aspect of the application."
+                                            }
+                                        ]
+                                    },
+                                    "doc": "The set of borrower and broker provided data for a single loan application."
+                                }
+                            ]
+                        },
+                        "doc": "The content of the message."
+                    },
+                    {
+                        "name": "Instructions",
+                        "type": {
+                            "type": "record",
+                            "name": "Package",
+                            "namespace": "Instructions",
+                            "fields": [
+                                {
+                                    "name": "ApplicationInstructions",
+                                    "type": {
+                                        "type": "record",
+                                        "name": "Package",
+                                        "namespace": "ApplicationInstructions.Instructions",
+                                        "fields": [
+                                            {
+                                                "name": "Submit",
+                                                "type": {
+                                                    "type": "record",
+                                                    "name": "Package",
+                                                    "namespace": "Submit.ApplicationInstructions.Instructions",
+                                                    "fields": [
+                                                        {
+                                                            "name": "AssessmentType",
+                                                            "type": "enum",
+                                                            "symbols": [
+                                                                "Full",
+                                                                "Indicative",
+                                                                "Quote"
+                                                            ],
+                                                            "doc": "Indicates the type of assessment."
+                                                        }
+                                                    ]
+                                                },
+                                                "doc": "Submission information related to the application process."
+                                            }
+                                        ]
+                                    },
+                                    "doc": "Submission information or application status updates."
+                                }
+                            ]
+                        },
+                        "doc": "Determines the scope of the message. The message can be about the Application, Valuation, Mortgage Insurance, Loan Documents or an Error."
+                    },
+                    {
+                        "name": "Publisher",
+                        "type": {
+                            "type": "record",
+                            "name": "Package",
+                            "namespace": "Publisher",
+                            "fields": [
+                                {
+                                    "name": "LIXICode",
+                                    "type": "string",
+                                    "doc": "The LIXI specified code of the sender/publisher of the Package."
+                                }
+                            ]
+                        },
+                        "doc": "The publisher of the specific XML file, being the party responsible for the content of the file as well as the work instruction, and to whom the response message would be delivered. For a mortgage broker sending an application to a lender, this would likely be the aggregator if they are providing the software, or perhaps the broker company or broker otherwise. For a lender requesting LMI, the lender is the publisher. For the LMI response, the LMI provider is the publisher."
+                    },
+                    {
+                        "name": "Recipient",
+                        "type": {
+                            "type": "array",
+                            "items": {
+                                "type": "record",
+                                "name": "Package",
+                                "namespace": "Recipient",
+                                "fields": [
+                                    {
+                                        "name": "LIXICode",
+                                        "type": "string",
+                                        "doc": "The LIXI specified code for the licensee that is the intended recipient for the Package."
+                                    }
+                                ]
+                            }
+                        },
+                        "doc": "The intended recipients (company or company specified routing) for the Package from the Publisher."
+                    },
+                    {
+                        "name": "SchemaVersion",
+                        "type": {
+                            "type": "record",
+                            "name": "Package",
+                            "namespace": "SchemaVersion",
+                            "fields": [
+                                {
+                                    "name": "LIXITransactionType",
+                                    "type": "string",
+                                    "doc": "Identifies the transaction type of the schema, for example CAL (for a Credit Application) or DAS (for Documents Preparation and Settlement)."
+                                },
+                                {
+                                    "name": "LIXIVersion",
+                                    "type": "string",
+                                    "doc": "Captures the LIXI version number that the application XML was written to conform with."
+                                }
+                            ]
+                        },
+                        "doc": "Contains information about the package schema version"
+                    }
+                ]
+            },
+            "doc": "The root element that contains a message for exchange between two end points involved in the workflow related to the processing of an application for a new financial product or change management of an existing financial product. The message contains instructions to the recipient requesting some workflow activity along with data related to: the applicant and the financial product involved; the publisher; one or more recipients; schema version information; and any related attachments."
+        }
+    ]
+}
