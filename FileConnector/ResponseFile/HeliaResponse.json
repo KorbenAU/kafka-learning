@@ -1,0 +1,135 @@
+{
+    "proposalStatus": {
+        "retryAfter": 0,
+        "proposalDecision": {
+            "lmiInsurerAbn": "string",
+            "decision": "APPROVED",
+            "lmiInsurerUnderwriterPhone": "string",
+            "lmiInsurerAddress": "string",
+            "proposalSummary": {
+                "lenderReference": "string",
+                "securityAddresses": [
+                    {
+                        "country": "string",
+                        "streetType": "string",
+                        "streetName": "string",
+                        "streetNumber": "string",
+                        "postcode": "string",
+                        "suburb": "string",
+                        "unitNumber": "string",
+                        "state": "NSW"
+                    }
+                ],
+                "coverType": "FullCover",
+                "otherInsurerDetails": {
+                    "existingPremiumPaid": 0,
+                    "previousInsuredLoanAmount": 0,
+                    "lmiPremiumPaidDate": "string",
+                    "outstandingLoanBalanceInsured": 0
+                },
+                "coverTerm": 0,
+                "loans": [
+                    {
+                        "loanTermInMonths": 0,
+                        "loanPurpose": "BRG",
+                        "loanAmount": 0
+                    }
+                ],
+                "applicants": [
+                    {
+                        "applicantRole": "Borrower",
+                        "firstName": "string",
+                        "applicantType": "Individual",
+                        "surname": "string",
+                        "companyName": "string",
+                        "companyABN": "string",
+                        "middleName": "string"
+                    }
+                ],
+                "coverRate": 0,
+                "premiumPayment": "MonthlyPremium",
+                "proposalSubmissionDate": "string",
+                "productName": "Standard"
+            },
+            "lmiPolicyVersion": 0,
+            "lmiInsurer": "string",
+            "declineAdvice": {
+                "declineReasons": [
+                    {
+                        "reasonMessages": ["string"],
+                        "reasonCode": "string"
+                    }
+                ]
+            },
+            "lmiInsurerUnderwriterName": "string",
+            "lmiPolicyNumber": 0,
+            "acceptanceAdvice": {
+                "loanApprovalDate": "string",
+                "coverExpiryDate": "string",
+                "quoteDishonourReasons": [
+                    {
+                        "reason": "string",
+                        "reasonCode": "string"
+                    }
+                ],
+                "lmiApprovedDate": "string",
+                "premiumDetails": [
+                    {
+                        "bankPayable": {
+                            "premium": 0,
+                            "stampDuty": 0,
+                            "totalPayable": 0,
+                            "gst": 0
+                        },
+                        "premium": 0,
+                        "totalPremiumCredit": 0,
+                        "premiumBeforeCredit": 0,
+                        "premiumCreditItems": [
+                            {
+                                "policyVersion": 0,
+                                "lmiPolicyNumber": 0,
+                                "creditAmount": 0
+                            }
+                        ],
+                        "borrowerPayable": {
+                            "premium": 0,
+                            "stampDuty": 0,
+                            "totalPayable": 0,
+                            "gst": 0
+                        }
+                    }
+                ],
+                "capitalisedPremiumAmount": 0,
+                "insuredParty": "string",
+                "totalInsuredLoanAmount": 0,
+                "supersededStatement": "string",
+                "finalPremiumPaymentDate": "string"
+            },
+            "lmiInsurerUnderwriterNotes": "string",
+            "conditionalApprovalAdvice": {
+                "valuationRequired": true,
+                "totalInsuredLoanAmount": 0,
+                "conditionalApprovalDate": "string"
+            }
+        },
+        "lmiPolicyNumber": 0,
+        "validationErrors": [
+            {
+                "severity": "string",
+                "code": "string",
+                "field": "string",
+                "message": "string"
+            }
+        ],
+        "proposalId": 0,
+        "status": "IN_PROGRESS"
+    },
+    "validationErrors": [
+        {
+            "severity": "string",
+            "code": "string",
+            "field": "string",
+            "message": "string"
+        }
+    ]
+}

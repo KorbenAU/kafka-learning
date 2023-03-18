@@ -1,0 +1,133 @@
+<Application>
+  <Identifier UniqueID="716788008"/>
+  <Submission>
+    <Date Year="2009" Month="06" Day="19"/>
+  </Submission>
+  <Branch>
+    <BranchDomicile>
+      <BSB>3159</BSB>
+    </BranchDomicile>
+  </Branch>
+  <PartySegment>
+    <Party Type="B">
+      <Identifier UniqueID="112310"/>
+      <Person>
+        <RelatedEntityRef RelatedID=""/>
+        <PersonName>
+          <FirstName>Yavuz</FirstName>
+          <OtherName></OtherName>
+          <Surname>Yamankol</Surname>
+        </PersonName>
+        <DateOfBirth>
+          <Date Year="" Month="" Day=""/>
+        </DateOfBirth>
+        <Employment Group="01"/>
+      </Person>
+    </Party>
+    <Party Type="B">
+      <Identifier UniqueID="112311"/>
+      <Person>
+        <RelatedEntityRef RelatedID=""/>
+        <PersonName>
+          <FirstName>Feriza</FirstName>
+          <OtherName></OtherName>
+          <Surname>Yamankol</Surname>
+        </PersonName>
+        <DateOfBirth>
+          <Date Year="" Month="" Day=""/>
+        </DateOfBirth>
+        <Employment Group="07"/>
+      </Person>
+    </Party>
+  </PartySegment>
+  <FinancialSegment>
+    <ValueItem>
+      <Identifier UniqueID="78292"/>
+      <Asset>
+        <RelatedEntityRef RelatedID="716788008"/>
+        <RealEstate FloorArea="">
+          <Residential Type=""/>
+          <ContractPrice ContractPriceAmount="210000.00"/>
+          <Location>
+            <Address>
+              <BuildingName>2 Tyquin Ct||||</BuildingName>
+              <City>SHEPPARTON</City>
+              <State Name="VIC"/>
+              <Postcode>3630</Postcode>
+            </Address>
+          </Location>
+        </RealEstate>
+      </Asset>
+    </ValueItem>
+    <ValueItem>
+      <Identifier UniqueID="78293"/>
+      <Asset>
+        <RelatedEntityRef RelatedID="716788008"/>
+        <RealEstate FloorArea="">
+          <Residential Type=""/>
+          <ContractPrice ContractPriceAmount="160000.00"/>
+          <Location>
+            <Address>
+              <BuildingName>22 Olympic Ave||||</BuildingName>
+              <City>SHEPPARTON</City>
+              <State Name="VIC"/>
+              <Postcode>3630</Postcode>
+            </Address>
+          </Location>
+        </RealEstate>
+      </Asset>
+    </ValueItem>
+    <ValueItem>
+      <Identifier UniqueID="78294"/>
+      <Asset>
+        <RelatedEntityRef RelatedID="716788008"/>
+        <RealEstate FloorArea="">
+          <Residential Type=""/>
+          <ContractPrice ContractPriceAmount="145000.00"/>
+          <Location>
+            <Address>
+              <BuildingName>4 Wartook Court</BuildingName>
+              <City>KIALLA</City>
+              <State Name="VIC"/>
+              <Postcode>3631</Postcode>
+            </Address>
+          </Location>
+        </RealEstate>
+      </Asset>
+    </ValueItem>
+  </FinancialSegment>
+  <LoanDetailSegment>
+    <LoanDetails>
+      <Identifier UniqueID="716788008"/>
+      <LoanTerm Units="Months">360</LoanTerm>
+      <AmountRequested Amount="488360.00"/>
+      <LoanPurpose PrimaryPurpose="Investment">
+        <LendingPurposeCode>07,07</LendingPurposeCode>
+      </LoanPurpose>
+      <RelatedEntityRef RelatedID="43026420"/>
+    </LoanDetails>
+    <LoanDetails>
+      <Identifier UniqueID="716788009"/>
+      <LoanTerm Units="Months">360</LoanTerm>
+      <AmountRequested Amount="488360.00"/>
+      <LoanPurpose PrimaryPurpose="Investment">
+        <LendingPurposeCode>07,07</LendingPurposeCode>
+      </LoanPurpose>
+      <RelatedEntityRef RelatedID="43026420"/>
+    </LoanDetails>
+  </LoanDetailSegment>
+  <MortgageInsuranceSegment>
+    <MortgageInsurance ProductCode="Standard" OutstandingBalanceIns="0.00" CapitalisedAmount="0.00">
+      <Identifier UniqueID="43026420" Type="MIAssigned"/>
+      <ApprovalDate>
+        <Date Year="2007" Month="07" Day="26"/>
+      </ApprovalDate>
+    </MortgageInsurance>
+    <MortgageInsurance ProductCode="Standard" OutstandingBalanceIns="0.00" CapitalisedAmount="0.00">
+      <Identifier UniqueID="43026421" Type="MIAssigned"/>
+      <ApprovalDate>
+        <Date Year="2007" Month="07" Day="26"/>
+      </ApprovalDate>
+    </MortgageInsurance>
+  </MortgageInsuranceSegment>
+</Application>

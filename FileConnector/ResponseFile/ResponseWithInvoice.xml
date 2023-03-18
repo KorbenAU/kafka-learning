@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ResponseMessage xmlns="http://www.gemico.com.au/XMLMessage">
+    <ResultCode>OK</ResultCode>
+    <Environment>UAT</Environment>
+    <System>LMI</System>
+    <RequestID>202301120sdfsf900384</RequestID>
+    <Errors/>
+    <Body>
+        <ResponseBatch xmlns="http://www.gemico.com.au/XMLData">
+            <BatchID>75001</BatchID>
+            <ResponseCount>3</ResponseCount>
+            <Responses>
+                <Response>
+                    <ResponseID>4762626</ResponseID>
+                    <Subject>AA</Subject>
+                    <ApplicationProcessedTime Day="12" Month="1" Year="2023"/>
+                    <ProposalSummary>
+                        <AdditionalLoanAmount>Not Applicable</AdditionalLoanAmount>
+                        <TotalSumInsured>81888</TotalSumInsured>
+                        <CorrelationId>43611393</CorrelationId>
+                        <CustRef>533823595</CustRef>
+                        <ApplicationType>NEW</ApplicationType>
+                        <UnderwritingType>DUA</UnderwritingType>
+                        <CustCode>CBA</CustCode>
+                        <LendingProgram>COMMONWEALTH BANK OF AUSTRALIA</LendingProgram>
+                        <ProposalDate Day="12" Month="1" Year="2023"/>
+                        <ApprovalDate Day="20" Month="12" Year="2022"/>
+                        <CustBranchBSB>061-200</CustBranchBSB>
+                        <CustBranchName>HEAD OFFICE</CustBranchName>
+                        <Borrowers>
+                            <Borrower>
+                                <BorrowerCustRef>1105482</BorrowerCustRef>
+                                <BorrowerType>IND</BorrowerType>
+                                <BorrowerGuarantorFlag>B</BorrowerGuarantorFlag>
+                                <IndividualDetails>
+                                    <Surname>BHAGAT</Surname>
+                                    <FirstName>YASH</FirstName>
+                                </IndividualDetails>
+                            </Borrower>
+                        </Borrowers>
+                        <LoanComponents>
+                            <LoanComponent>
+                                <LoanCustRef>533823595</LoanCustRef>
+                                <Purpose>PCH</Purpose>
+                                <Term>360</Term>
+                                <LoanAmount>80650</LoanAmount>
+                            </LoanComponent>
+                        </LoanComponents>
+                        <Securities>
+                            <Security>
+                                <SecurityCustRef>781990</SecurityCustRef>
+                                <Address>
+                                    <PropertyName>UNIT 28 0 FIOCCHI AVENUEXYZ</PropertyName>
+                                    <Postcode>3199</Postcode>
+                                    <City>FRANKSTON</City>
+                                    <State>VIC</State>
+                                    <Country>AUS</Country>
+                                </Address>
+                            </Security>
+                        </Securities>
+                    </ProposalSummary>
+                    <AmountInsured>81888</AmountInsured>
+                    <Decision>APPROVED</Decision>
+                    <LMIRefNo>43611393</LMIRefNo>
+                    <InvoiceNumber>75001</InvoiceNumber>
+                    <InsApprovedDate Day="20" Month="12" Year="2022"/>
+                    <FinalPremiumPaymentDate Day="24" Month="6" Year="2023"/>
+                    <ExpiryDateCover Day="14" Month="4" Year="2053"/>
+                    <LevelCover>100</LevelCover>
+                    <LMICosts>
+                        <TotalPayable>1319.81</TotalPayable>
+                        <Premium>1090.75</Premium>
+                        <StampDuty>119.98</StampDuty>
+                        <GST>109.08</GST>
+                    </LMICosts>
+                    <InsuredParty>COMMONWEALTH BANK OF AUSTRALIA LTD</InsuredParty>
+                    <IssuingOffice>NEW SOUTH WALES</IssuingOffice>
+                    <IssuingOfficeAddress>LEVEL 26 101 MILLER ST NORTH SYDNEY NSW 2060 AUS</IssuingOfficeAddress>
+                    <IssuingOfficeFax>1300 366 228</IssuingOfficeFax>
+                    <IssuingOfficePhone>1300 655 422</IssuingOfficePhone>
+                    <LMIInsurer>HELIA</LMIInsurer>
+                    <ResponseDate Day="12" Month="1" Year="2023"/>
+                    <SignedFor>INTENTIONALLY BLANK - NOT SIGNED</SignedFor>
+                    <SignedForDate Day="12" Month="1" Year="2023"/>
+                    <Statement>This Acceptance Advice supersedes any previous Acceptance Advices for the above LMI Reference.</Statement>
+                    <SubjectBorrName>BHAGAT YASH</SubjectBorrName>
+                    <UnderwriterContactFax>1300 366 228</UnderwriterContactFax>
+                    <UnderwriterContactPhone>1300 655 422</UnderwriterContactPhone>
+                    <UnderwriterName>VIRTUAL UNDERWRITER</UnderwriterName>
+                    <Reasons/>
+                    <Requests/>
+                    <Errors/>
+                </Response>
+                <Response>
+                    <ResponseID>4762625</ResponseID>
+                    <Subject>AA</Subject>
+                    <ApplicationProcessedTime Day="12" Month="1" Year="2023"/>
+                    <ProposalSummary>
+                        <AdditionalLoanAmount>Not Applicable</AdditionalLoanAmount>
+                        <TotalSumInsured>505213</TotalSumInsured>
+                        <CorrelationId>43611395</CorrelationId>
+                        <CustRef>438559175</CustRef>
+                        <ApplicationType>NEW</ApplicationType>
+                        <UnderwritingType>DUA</UnderwritingType>
+                        <CustCode>CBA</CustCode>
+                        <LendingProgram>COMMONWEALTH BANK OF AUSTRALIA</LendingProgram>
+                        <ProposalDate Day="12" Month="1" Year="2023"/>
+                        <ApprovalDate Day="11" Month="1" Year="2023"/>
+                        <CustBranchBSB>061-200</CustBranchBSB>
+                        <CustBranchName>HEAD OFFICE</CustBranchName>
+                        <Borrowers>
+                            <Borrower>
+                                <BorrowerCustRef>1105531</BorrowerCustRef>
+                                <BorrowerType>IND</BorrowerType>
+                                <BorrowerGuarantorFlag>B</BorrowerGuarantorFlag>
+                                <IndividualDetails>
+                                    <Surname>ONE</Surname>
+                                    <FirstName>SCENARIO</FirstName>
+                                </IndividualDetails>
+                            </Borrower>
+                        </Borrowers>
+                        <LoanComponents>
+                            <LoanComponent>
+                                <LoanCustRef>438559175</LoanCustRef>
+                                <Purpose>PCH</Purpose>
+                                <Term>360</Term>
+                                <LoanAmount>500600</LoanAmount>
+                            </LoanComponent>
+                        </LoanComponents>
+                        <Securities>
+                            <Security>
+                                <SecurityCustRef>782043</SecurityCustRef>
+                                <Address>
+                                    <StreetNo>80</StreetNo>
+                                    <Street>GEORGE</Street>
+                                    <StreetType>ST</StreetType>
+                                    <Postcode>2000</Postcode>
+                                    <City>THE ROCKS</City>
+                                    <State>NSW</State>
+                                    <Country>AUS</Country>
+                                </Address>
+                            </Security>
+                        </Securities>
+                    </ProposalSummary>
+                    <AmountInsured>505213</AmountInsured>
+                    <Decision>APPROVED</Decision>
+                    <LMIRefNo>43611395</LMIRefNo>
+                    <InvoiceNumber>75001</InvoiceNumber>
+                    <InsApprovedDate Day="11" Month="1" Year="2023"/>
+                    <FinalPremiumPaymentDate Day="16" Month="7" Year="2023"/>
+                    <ExpiryDateCover Day="14" Month="4" Year="2053"/>
+                    <LevelCover>100</LevelCover>
+                    <LMICosts>
+                        <TotalPayable>4950.54</TotalPayable>
+                        <Premium>4500.49</Premium>
+                        <StampDuty>0</StampDuty>
+                        <GST>450.05</GST>
+                        <PremiumLoaderItem LoaderCode="Investment"/>
+                    </LMICosts>
+                    <InsuredParty>COMMONWEALTH BANK OF AUSTRALIA LTD</InsuredParty>
+                    <IssuingOffice>NEW SOUTH WALES</IssuingOffice>
+                    <IssuingOfficeAddress>LEVEL 26 101 MILLER ST NORTH SYDNEY NSW 2060 AUS</IssuingOfficeAddress>
+                    <IssuingOfficeFax>1300 366 228</IssuingOfficeFax>
+                    <IssuingOfficePhone>1300 655 422</IssuingOfficePhone>
+                    <LMIInsurer>HELIA</LMIInsurer>
+                    <ResponseDate Day="12" Month="1" Year="2023"/>
+                    <SignedFor>INTENTIONALLY BLANK - NOT SIGNED</SignedFor>
+                    <SignedForDate Day="12" Month="1" Year="2023"/>
+                    <Statement>This Acceptance Advice supersedes any previous Acceptance Advices for the above LMI Reference.</Statement>
+                    <SubjectBorrName>ONE SCENARIO</SubjectBorrName>
+                    <UnderwriterContactFax>1300 366 228</UnderwriterContactFax>
+                    <UnderwriterContactPhone>1300 655 422</UnderwriterContactPhone>
+                    <UnderwriterName>VIRTUAL UNDERWRITER</UnderwriterName>
+                    <Reasons/>
+                    <Requests/>
+                    <Errors/>
+                </Response>
+                <Response>
+                    <ResponseID>4762624</ResponseID>
+                    <Subject>AA</Subject>
+                    <ApplicationProcessedTime Day="12" Month="1" Year="2023"/>
+                    <ProposalSummary>
+                        <AdditionalLoanAmount>Not Applicable</AdditionalLoanAmount>
+                        <TotalSumInsured>506120</TotalSumInsured>
+                        <CorrelationId>43611394</CorrelationId>
+                        <CustRef>533823819</CustRef>
+                        <ApplicationType>NEW</ApplicationType>
+                        <UnderwritingType>DUA</UnderwritingType>
+                        <CustCode>CBA</CustCode>
+                        <LendingProgram>COMMONWEALTH BANK OF AUSTRALIA</LendingProgram>
+                        <ProposalDate Day="12" Month="1" Year="2023"/>
+                        <ApprovalDate Day="10" Month="1" Year="2023"/>
+                        <CustBranchBSB>061-200</CustBranchBSB>
+                        <CustBranchName>HEAD OFFICE</CustBranchName>
+                        <Borrowers>
+                            <Borrower>
+                                <BorrowerCustRef>1105530</BorrowerCustRef>
+                                <BorrowerType>IND</BorrowerType>
+                                <BorrowerGuarantorFlag>B</BorrowerGuarantorFlag>
+                                <IndividualDetails>
+                                    <Surname>ONE</Surname>
+                                    <FirstName>SCENARIO</FirstName>
+                                </IndividualDetails>
+                            </Borrower>
+                        </Borrowers>
+                        <LoanComponents>
+                            <LoanComponent>
+                                <LoanCustRef>533823819</LoanCustRef>
+                                <Purpose>PCH</Purpose>
+                                <Term>360</Term>
+                                <LoanAmount>501500</LoanAmount>
+                            </LoanComponent>
+                        </LoanComponents>
+                        <Securities>
+                            <Security>
+                                <SecurityCustRef>782042</SecurityCustRef>
+                                <Address>
+                                    <StreetNo>80</StreetNo>
+                                    <Street>GEORGE</Street>
+                                    <StreetType>ST</StreetType>
+                                    <Postcode>2000</Postcode>
+                                    <City>THE ROCKS</City>
+                                    <State>NSW</State>
+                                    <Country>AUS</Country>
+                                </Address>
+                            </Security>
+                        </Securities>
+                    </ProposalSummary>
+                    <AmountInsured>506120</AmountInsured>
+                    <Decision>APPROVED</Decision>
+                    <LMIRefNo>43611394</LMIRefNo>
+                    <InvoiceNumber>75001</InvoiceNumber>
+                    <InsApprovedDate Day="10" Month="1" Year="2023"/>
+                    <FinalPremiumPaymentDate Day="15" Month="7" Year="2023"/>
+                    <ExpiryDateCover Day="14" Month="4" Year="2053"/>
+                    <LevelCover>100</LevelCover>
+                    <LMICosts>
+                        <TotalPayable>4958.05</TotalPayable>
+                        <Premium>4507.32</Premium>
+                        <StampDuty>0</StampDuty>
+                        <GST>450.73</GST>
+                        <PremiumLoaderItem LoaderCode="Investment"/>
+                    </LMICosts>
+                    <InsuredParty>COMMONWEALTH BANK OF AUSTRALIA LTD</InsuredParty>
+                    <IssuingOffice>NEW SOUTH WALES</IssuingOffice>
+                    <IssuingOfficeAddress>LEVEL 26 101 MILLER ST NORTH SYDNEY NSW 2060 AUS</IssuingOfficeAddress>
+                    <IssuingOfficeFax>1300 366 228</IssuingOfficeFax>
+                    <IssuingOfficePhone>1300 655 422</IssuingOfficePhone>
+                    <LMIInsurer>HELIA</LMIInsurer>
+                    <ResponseDate Day="12" Month="1" Year="2023"/>
+                    <SignedFor>INTENTIONALLY BLANK - NOT SIGNED</SignedFor>
+                    <SignedForDate Day="12" Month="1" Year="2023"/>
+                    <Statement>This Acceptance Advice supersedes any previous Acceptance Advices for the above LMI Reference.</Statement>
+                    <SubjectBorrName>ONE SCENARIO</SubjectBorrName>
+                    <UnderwriterContactFax>1300 366 228</UnderwriterContactFax>
+                    <UnderwriterContactPhone>1300 655 422</UnderwriterContactPhone>
+                    <UnderwriterName>VIRTUAL UNDERWRITER</UnderwriterName>
+                    <Reasons/>
+                    <Requests/>
+                    <Errors/>
+                </Response>
+            </Responses>
+        </ResponseBatch>
+    </Body>
+</ResponseMessage>

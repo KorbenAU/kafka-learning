@@ -1,0 +1,354 @@
+{
+    "type": "record",
+    "name": "ApplicationFulfilmentMessage",
+    "namespace": "au.com.cba.kafka.lmi.core",
+    "fields": [
+        {
+            "name": "header",
+            "type": {
+                "type": "record",
+                "name": "KafkaEventHeader",
+                "fields": [
+                    {
+                        "name": "correlationId",
+                        "type": "string"
+                    },
+                    {
+                        "name": "processPath",
+                        "type": [
+                            "null",
+                            {
+                                "type": "array",
+                                "items": {
+                                    "type": "record",
+                                    "name": "ProcessPathElement",
+                                    "fields": [
+                                        {
+                                            "name": "source",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "name": "timestamp",
+                                            "type": "string"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "RequestId",
+            "type": "string"
+        },
+        {
+            "name": "Identifier",
+            "type": "string"
+        },
+        {
+            "name": "Submission",
+            "type": {
+                "type": "record",
+                "name": "Submission",
+                "fields": [
+                    {
+                        "name": "Date",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Branch",
+            "type": {
+                "type": "record",
+                "name": "Branch",
+                "fields": [
+                    {
+                        "name": "BranchDomicile",
+                        "type": {
+                            "type": "record",
+                            "name": "BranchDomicile",
+                            "fields": [
+                                {
+                                    "name": "BSB",
+                                    "type": "int"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "PartySegment",
+            "type": {
+                "type": "record",
+                "name": "PartySegment",
+                "fields": [
+                    {
+                        "name": "Party",
+                        "type": {
+                            "type": "array",
+                            "items": {
+                                "type": "record",
+                                "name": "Party",
+                                "fields": [
+                                    {
+                                        "name": "Identifier",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "name": "Person",
+                                        "type": {
+                                            "type": "record",
+                                            "name": "Person",
+                                            "fields": [
+                                                {
+                                                    "name": "RelatedEntityRef",
+                                                    "type": "string"
+                                                },
+                                                {
+                                                    "name": "PersonName",
+                                                    "type": {
+                                                        "type": "record",
+                                                        "name": "PersonName",
+                                                        "fields": [
+                                                            {
+                                                                "name": "FirstName",
+                                                                "type": "string"
+                                                            },
+                                                            {
+                                                                "name": "OtherName",
+                                                                "type": "string"
+                                                            },
+                                                            {
+                                                                "name": "Surname",
+                                                                "type": "string"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "name": "DateOfBirth",
+                                                    "type": {
+                                                        "type": "record",
+                                                        "name": "DateOfBirth",
+                                                        "fields": [
+                                                            {
+                                                                "name": "Date",
+                                                                "type": "string"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "name": "Employment",
+                                                    "type": "string"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "FinancialSegment",
+            "type": {
+                "type": "record",
+                "name": "FinancialSegment",
+                "fields": [
+                    {
+                        "name": "ValueItem",
+                        "type": {
+                            "type": "array",
+                            "items": {
+                                "type": "record",
+                                "name": "ValueItem",
+                                "fields": [
+                                    {
+                                        "name": "Identifier",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "name": "Asset",
+                                        "type": {
+                                            "type": "record",
+                                            "name": "Asset",
+                                            "fields": [
+                                                {
+                                                    "name": "RelatedEntityRef",
+                                                    "type": "string"
+                                                },
+                                                {
+                                                    "name": "RealEstate",
+                                                    "type": {
+                                                        "type": "record",
+                                                        "name": "RealEstate",
+                                                        "fields": [
+                                                            {
+                                                                "name": "Residential",
+                                                                "type": "string"
+                                                            },
+                                                            {
+                                                                "name": "ContractPrice",
+                                                                "type": "string"
+                                                            },
+                                                            {
+                                                                "name": "Location",
+                                                                "type": {
+                                                                    "type": "record",
+                                                                    "name": "Location",
+                                                                    "fields": [
+                                                                        {
+                                                                            "name": "Address",
+                                                                            "type": {
+                                                                                "type": "record",
+                                                                                "name": "Address",
+                                                                                "fields": [
+                                                                                    {
+                                                                                        "name": "BuildingName",
+                                                                                        "type": "string"
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "City",
+                                                                                        "type": "string"
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "State",
+                                                                                        "type": "string"
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "Postcode",
+                                                                                        "type": "int"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "LoanDetailSegment",
+            "type": {
+                "type": "record",
+                "name": "LoanDetailSegment",
+                "fields": [
+                    {
+                        "name": "LoanDetails",
+                        "type": {
+                            "type": "array",
+                            "items": {
+                                "type": "record",
+                                "name": "LoanDetails",
+                                "fields": [
+                                    {
+                                        "name": "Identifier",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "name": "LoanTermValue",
+                                        "type": "int"
+                                    },
+                                    {
+                                        "name": "LoanTermUnit",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "name": "AmountRequested",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "name": "LoanPurpose",
+                                        "type": {
+                                            "type": "record",
+                                            "name": "LoanPurpose",
+                                            "fields": [
+                                                {
+                                                    "name": "LendingPurposeCode",
+                                                    "type": "string"
+                                                },
+                                                {
+                                                    "name": "PrimaryPurpose",
+                                                    "type": "string"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "RelatedEntityRef",
+                                        "type": "string"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "MortgageInsuranceSegment",
+            "type": {
+                "type": "record",
+                "name": "MortgageInsuranceSegment",
+                "fields": [
+                    {
+                        "name": "MortgageInsurance",
+                        "type": {
+                            "type": "array",
+                            "items": {
+                                "type": "record",
+                                "name": "MortgageInsurance",
+                                "fields": [
+                                    {
+                                        "name": "Identifier",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "name": "IdentifierType",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "name": "ProductCode",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "name": "OutstandingBalanceIns",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "name": "CapitalisedAmount",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "name": "ApprovalDate",
+                                        "type": "string"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

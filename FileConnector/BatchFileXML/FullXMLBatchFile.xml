@@ -1,0 +1,330 @@
+<?xml version="1.0"?>
+<RequestMessage>
+  <UserId>sa</UserId>
+  <Password>sa</Password>
+  <Environment>UAT</Environment>
+  <System>LMI</System>
+  <RequestID>2020072722df08829</RequestID>
+  <Request>
+    <Function>Create</Function>
+    <Data>
+      <ApplicationBatch>
+        <Application>
+          <Identifier UniqueID="sdf716788008"/>
+          <Submission>
+            <Date Year="2009" Month="06" Day="19"/>
+          </Submission>
+          <Branch>
+            <BranchDomicile>
+              <BSB>3159</BSB>
+            </BranchDomicile>
+          </Branch>
+          <PartySegment>
+            <Party Type="B">
+              <Identifier UniqueID="112asdf310"/>
+              <Person>
+                <RelatedEntityRef RelatedID="asdf"/>
+                <PersonName>
+                  <FirstName>Yavuz</FirstName>
+                  <OtherName></OtherName>
+                  <Surname>Yamankol</Surname>
+                </PersonName>
+                <DateOfBirth>
+                  <Date Year="2012" Month="12" Day="12"/>
+                </DateOfBirth>
+                <Employment Group="01sdf"/>
+              </Person>
+            </Party>
+            <Party Type="B">
+              <Identifier UniqueID="112311"/>
+              <Person>
+                <RelatedEntityRef RelatedID=""/>
+                <PersonName>
+                  <FirstName>Feriza</FirstName>
+                  <OtherName></OtherName>
+                  <Surname>Yamankol</Surname>
+                </PersonName>
+                <DateOfBirth>
+                  <Date Year="" Month="" Day=""/>
+                </DateOfBirth>
+                <Employment Group="07"/>
+              </Person>
+            </Party>
+          </PartySegment>
+          <FinancialSegment>
+            <ValueItem>
+              <Identifier UniqueID="782sdf92"/>
+              <Asset>
+                <RelatedEntityRef RelatedID="7167sdf88008"/>
+                <RealEstate FloorArea="">
+                  <Residential Type=""/>
+                  <ContractPrice ContractPriceAmount="210000.00"/>
+                  <Location>
+                    <Address>
+                      <BuildingName>2 Tyquin Ct||||</BuildingName>
+                      <City>SHEPPARTON</City>
+                      <State Name="VIC"/>
+                      <Postcode>3630</Postcode>
+                    </Address>
+                  </Location>
+                </RealEstate>
+              </Asset>
+            </ValueItem>
+            <ValueItem>
+              <Identifier UniqueID="78293"/>
+              <Asset>
+                <RelatedEntityRef RelatedID="716788008"/>
+                <RealEstate FloorArea="">
+                  <Residential Type=""/>
+                  <ContractPrice ContractPriceAmount="160000.00"/>
+                  <Location>
+                    <Address>
+                      <BuildingName>22 Olympic Ave||||</BuildingName>
+                      <City>SHEPPARTON</City>
+                      <State Name="VIC"/>
+                      <Postcode>3630</Postcode>
+                    </Address>
+                  </Location>
+                </RealEstate>
+              </Asset>
+            </ValueItem>
+            <ValueItem>
+              <Identifier UniqueID="78294"/>
+              <Asset>
+                <RelatedEntityRef RelatedID="716788008"/>
+                <RealEstate FloorArea="">
+                  <Residential Type=""/>
+                  <ContractPrice ContractPriceAmount="145000.00"/>
+                  <Location>
+                    <Address>
+                      <BuildingName>4 Wartook Court</BuildingName>
+                      <City>KIALLA</City>
+                      <State Name="VIC"/>
+                      <Postcode>3631</Postcode>
+                    </Address>
+                  </Location>
+                </RealEstate>
+              </Asset>
+            </ValueItem>
+          </FinancialSegment>
+          <LoanDetailSegment>
+            <LoanDetails>
+              <Identifier UniqueID="7167asdf88008"/>
+              <LoanTerm Units="Months">360</LoanTerm>
+              <AmountRequested Amount="488360.00"/>
+              <LoanPurpose PrimaryPurpose="Investment">
+                <LendingPurposeCode>07,07</LendingPurposeCode>
+              </LoanPurpose>
+              <RelatedEntityRef RelatedID="43026sdf420"/>
+            </LoanDetails>
+            <LoanDetails>
+              <Identifier UniqueID="716788009"/>
+              <LoanTerm Units="Months">360</LoanTerm>
+              <AmountRequested Amount="488360.00"/>
+              <LoanPurpose PrimaryPurpose="Investment">
+                <LendingPurposeCode>07,07</LendingPurposeCode>
+              </LoanPurpose>
+              <RelatedEntityRef RelatedID="43026420"/>
+            </LoanDetails>
+          </LoanDetailSegment>
+          <MortgageInsuranceSegment>
+            <MortgageInsurance ProductCode="Standard" OutstandingBalanceIns="0.00" CapitalisedAmount="0.00">
+              <Identifier UniqueID="43026sdfsa420" Type="MIAssigned"/>
+              <ApprovalDate>
+                <Date Year="2007" Month="07" Day="26"/>
+              </ApprovalDate>
+            </MortgageInsurance>
+            <MortgageInsurance ProductCode="Standard" OutstandingBalanceIns="0.00" CapitalisedAmount="0.00">
+              <Identifier UniqueID="43026421" Type="MIAssigned"/>
+              <ApprovalDate>
+                <Date Year="2007" Month="07" Day="26"/>
+              </ApprovalDate>
+            </MortgageInsurance>
+          </MortgageInsuranceSegment>
+        </Application>
+        <Application>
+          <Identifier UniqueID="819752200"/>
+          <Submission>
+            <Date Year="2020" Month="07" Day="24"/>
+          </Submission>
+          <Branch>
+            <BranchDomicile>
+              <BSB>3950</BSB>
+            </BranchDomicile>
+          </Branch>
+          <PartySegment>
+            <Party Type="B">
+              <Identifier UniqueID="218082"/>
+              <Person>
+                <RelatedEntityRef RelatedID=""/>
+                <PersonName>
+                  <FirstName>Soe</FirstName>
+                  <OtherName></OtherName>
+                  <Surname>Thiha</Surname>
+                </PersonName>
+                <DateOfBirth>
+                  <Date Year="" Month="" Day=""/>
+                </DateOfBirth>
+                <Employment Group="15"/>
+              </Person>
+            </Party>
+            <Party Type="B">
+              <Identifier UniqueID="218083"/>
+              <Person>
+                <RelatedEntityRef RelatedID=""/>
+                <PersonName>
+                  <FirstName>Nuam</FirstName>
+                  <OtherName></OtherName>
+                  <Surname>Thiha</Surname>
+                </PersonName>
+                <DateOfBirth>
+                  <Date Year="" Month="" Day=""/>
+                </DateOfBirth>
+                <Employment Group="15"/>
+              </Person>
+            </Party>
+          </PartySegment>
+          <FinancialSegment>
+            <ValueItem>
+              <Identifier UniqueID="150547"/>
+              <Asset>
+                <RelatedEntityRef RelatedID="819752200"/>
+                <RealEstate FloorArea="">
+                  <Residential Type=""/>
+                  <ContractPrice ContractPriceAmount="270000.00"/>
+                  <Location>
+                    <Address>
+                      <BuildingName>14 Joyce Street||||</BuildingName>
+                      <City>Springvale </City>
+                      <State Name="VIC"/>
+                      <Postcode>3171</Postcode>
+                    </Address>
+                  </Location>
+                </RealEstate>
+              </Asset>
+            </ValueItem>
+          </FinancialSegment>
+          <LoanDetailSegment>
+            <LoanDetails>
+              <Identifier UniqueID="819752200"/>
+              <LoanTerm Units="Months">360</LoanTerm>
+              <AmountRequested Amount="200020.00"/>
+              <LoanPurpose PrimaryPurpose="OwnerOccupied">
+                <LendingPurposeCode>07</LendingPurposeCode>
+              </LoanPurpose>
+              <RelatedEntityRef RelatedID="43618148"/>
+            </LoanDetails>
+          </LoanDetailSegment>
+          <MortgageInsuranceSegment>
+            <MortgageInsurance ProductCode="LowDoc" OutstandingBalanceIns="0.00" CapitalisedAmount="0.00">
+              <Identifier UniqueID="43618148" Type="MIAssigned"/>
+              <ApprovalDate>
+                <Date Year="2007" Month="12" Day="12"/>
+              </ApprovalDate>
+            </MortgageInsurance>
+          </MortgageInsuranceSegment>
+        </Application>
+        <Application>
+          <Identifier UniqueID="720119800"/>
+          <Submission>
+            <Date Year="2020" Month="07" Day="24"/>
+          </Submission>
+          <Branch>
+            <BranchDomicile>
+              <BSB>3514</BSB>
+            </BranchDomicile>
+          </Branch>
+          <PartySegment>
+            <Party Type="B">
+              <Identifier UniqueID="218391"/>
+              <Person>
+                <RelatedEntityRef RelatedID=""/>
+                <PersonName>
+                  <FirstName>Misty</FirstName>
+                  <OtherName>Chantelle</OtherName>
+                  <Surname>Dumesny</Surname>
+                </PersonName>
+                <DateOfBirth>
+                  <Date Year="" Month="" Day=""/>
+                </DateOfBirth>
+                <Employment Group="00"/>
+              </Person>
+            </Party>
+            <Party Type="B">
+              <Identifier UniqueID="218392"/>
+              <Person>
+                <RelatedEntityRef RelatedID=""/>
+                <PersonName>
+                  <FirstName>Andrew</FirstName>
+                  <OtherName>Edward</OtherName>
+                  <Surname>Dumesny</Surname>
+                </PersonName>
+                <DateOfBirth>
+                  <Date Year="" Month="" Day=""/>
+                </DateOfBirth>
+                <Employment Group="00"/>
+              </Person>
+            </Party>
+          </PartySegment>
+          <FinancialSegment>
+            <ValueItem>
+              <Identifier UniqueID="150743"/>
+              <Asset>
+                <RelatedEntityRef RelatedID="720119800"/>
+                <RealEstate FloorArea="">
+                  <Residential Type=""/>
+                  <ContractPrice ContractPriceAmount="152000.00"/>
+                  <Location>
+                    <Address>
+                      <BuildingName>9 Palk Street||||</BuildingName>
+                      <City>Horsham</City>
+                      <State Name="VIC"/>
+                      <Postcode>3400</Postcode>
+                    </Address>
+                  </Location>
+                </RealEstate>
+              </Asset>
+            </ValueItem>
+            <ValueItem>
+              <Identifier UniqueID="150744"/>
+              <Asset>
+                <RelatedEntityRef RelatedID="720119800"/>
+                <RealEstate FloorArea="">
+                  <Residential Type=""/>
+                  <ContractPrice ContractPriceAmount="340500.00"/>
+                  <Location>
+                    <Address>
+                      <BuildingName>64 Peppertree Lane||||</BuildingName>
+                      <City>Horsham</City>
+                      <State Name="VIC"/>
+                      <Postcode>3400</Postcode>
+                    </Address>
+                  </Location>
+                </RealEstate>
+              </Asset>
+            </ValueItem>
+          </FinancialSegment>
+          <LoanDetailSegment>
+            <LoanDetails>
+              <Identifier UniqueID="720119800"/>
+              <LoanTerm Units="Months">360</LoanTerm>
+              <AmountRequested Amount="396020.00"/>
+              <LoanPurpose PrimaryPurpose="OwnerOccupied">
+                <LendingPurposeCode>04,09,04</LendingPurposeCode>
+              </LoanPurpose>
+              <RelatedEntityRef RelatedID="43618154"/>
+            </LoanDetails>
+          </LoanDetailSegment>
+          <MortgageInsuranceSegment>
+            <MortgageInsurance ProductCode="Standard" OutstandingBalanceIns="0.00" CapitalisedAmount="0.00">
+              <Identifier UniqueID="43618154" Type="MIAssigned"/>
+              <ApprovalDate>
+                <Date Year="2007" Month="12" Day="18"/>
+              </ApprovalDate>
+            </MortgageInsurance>
+          </MortgageInsuranceSegment>
+        </Application>
+      </ApplicationBatch>
+    </Data>
+  </Request>
+</RequestMessage>

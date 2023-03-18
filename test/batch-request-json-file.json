@@ -1,0 +1,67 @@
+{
+    "Identifier": "bbbc8bfcfeba41d9a2711c673536de50", // PolicyNumber
+    "Submission": {
+        "Date": "2017-01-07"
+    },
+    "Branch": {
+        "BranchDomicile": {
+            "BSB": 2000
+        }
+    },
+    "PartySegment": {
+        "Party": {
+            "Identifier": "bbbc8bfcfeba41d9a2711c673536de50",
+            "Person": {
+                "RelatedEntityRef": "bbbc8bfcfeba41d9a2711c673536de50",
+                "PersonName": {
+                    "FirstName": "VANCE",
+                    "OtherName": "agsdf",
+                    "Surname": "CREED"
+                },
+                "DateOfBirth": {
+                    "Date": "2017-01-07"
+                },
+                "Employment": "gasdfasdf"
+            }
+        }
+    },
+    "FinancialSegment": {
+        "ValueItem": {
+            "Identifier": "bbbc8bfcfeba41d9a2711c673536de50",
+            "Asset": {
+                "RelatedEntityRef": "bbbc8bfcfeba41d9a2711c673536de50",
+                "RealEstate": {
+                    "Residential": "adgasd",
+                    "ContractPrice": "gasdfasdf",
+                    "Location": {
+                        "Address": {
+                            "BuildingName": "175 Pitt Street",
+                            "City": "SYDNEY",
+                            "State": "VIC",
+                            "Postcode": 2000
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "LoanDetailSegment": {
+        "LoanDetails": {
+            "Identifier": "bbbc8bfcfeba41d9a2711c673536de50",
+            "LoanTerm": 96,
+            "AmountRequested": "100.00",
+            "LoanPurpose": {
+                "LendingPurposeCode": 2
+            },
+            "RelatedEntityRef": "bbbc8bfcfeba41d9a2711c673536de50"
+        }
+    },
+    "MortgageInsuranceSegment": {
+        "MortgageInsurance": {
+            "Identifier": "bbbc8bfcfeba41d9a2711c673536de50",
+            "ApprovalDate": {
+                "Date": "2017-01-07"
+            }
+        }
+    }
+}

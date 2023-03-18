@@ -1,0 +1,349 @@
+{
+    "type": "record",
+    "name": "ApplicationFulfilmentMessage",
+    "namespace": "au.com.cba.kafka.lmi.core",
+    "fields": [
+        {
+            "name": "Identifier",
+            "type": "string",
+            "doc": "Type inferred from '\"bbbc8bfcfeba41d9a2711c673536de50\"'"
+        },
+        {
+            "name": "Submission",
+            "type": {
+                "type": "record",
+                "name": "Submission",
+                "namespace": "au.com.cba.kafka.lmi.core",
+                "fields": [
+                    {
+                        "name": "Date",
+                        "type": "string",
+                        "doc": "Type inferred from '\"2017-01-07\"'"
+                    }
+                ]
+            },
+            "doc": "Type inferred from '{\"Date\":\"2017-01-07\"}'"
+        },
+        {
+            "name": "Branch",
+            "type": {
+                "type": "record",
+                "name": "Branch",
+                "namespace": "au.com.cba.kafka.lmi.core",
+                "fields": [
+                    {
+                        "name": "BranchDomicile",
+                        "type": {
+                            "type": "record",
+                            "name": "BranchDomicile",
+                            "namespace": "au.com.cba.kafka.lmi.core",
+                            "fields": [
+                                {
+                                    "name": "BSB",
+                                    "type": "int",
+                                    "doc": "Type inferred from '2000'"
+                                }
+                            ]
+                        },
+                        "doc": "Type inferred from '{\"BSB\":2000}'"
+                    }
+                ]
+            },
+            "doc": "Type inferred from '{\"BranchDomicile\":{\"BSB\":2000}}'"
+        },
+        {
+            "name": "PartySegment",
+            "type": {
+                "type": "record",
+                "name": "PartySegment",
+                "namespace": "au.com.cba.kafka.lmi.core",
+                "fields": [
+                    {
+                        "name": "Party",
+                        "type": {
+                            "type": "record",
+                            "name": "Party",
+                            "namespace": "au.com.cba.kafka.lmi.core",
+                            "fields": [
+                                {
+                                    "name": "Identifier",
+                                    "type": "string",
+                                    "doc": "Type inferred from '\"bbbc8bfcfeba41d9a2711c673536de50\"'"
+                                },
+                                {
+                                    "name": "Person",
+                                    "type": {
+                                        "type": "record",
+                                        "name": "Person",
+                                        "namespace": "au.com.cba.kafka.lmi.core",
+                                        "fields": [
+                                            {
+                                                "name": "RelatedEntityRef",
+                                                "type": "string",
+                                                "doc": "Type inferred from '\"bbbc8bfcfeba41d9a2711c673536de50\"'"
+                                            },
+                                            {
+                                                "name": "PersonName",
+                                                "type": {
+                                                    "type": "record",
+                                                    "name": "PersonName",
+                                                    "namespace": "au.com.cba.kafka.lmi.core",
+                                                    "fields": [
+                                                        {
+                                                            "name": "FirstName",
+                                                            "type": "string",
+                                                            "doc": "Type inferred from '\"VANCE\"'"
+                                                        },
+                                                        {
+                                                            "name": "OtherName",
+                                                            "type": "string",
+                                                            "doc": "Type inferred from '\"agsdf\"'"
+                                                        },
+                                                        {
+                                                            "name": "Surname",
+                                                            "type": "string",
+                                                            "doc": "Type inferred from '\"CREED\"'"
+                                                        }
+                                                    ]
+                                                },
+                                                "doc": "Type inferred from '{\"FirstName\":\"VANCE\",\"OtherName\":\"agsdf\",\"Surname\":\"CREED\"}'"
+                                            },
+                                            {
+                                                "name": "DateOfBirth",
+                                                "type": {
+                                                    "type": "record",
+                                                    "name": "DateOfBirth",
+                                                    "namespace": "au.com.cba.kafka.lmi.core",
+                                                    "fields": [
+                                                        {
+                                                            "name": "Date",
+                                                            "type": "string",
+                                                            "doc": "Type inferred from '\"2017-01-07\"'"
+                                                        }
+                                                    ]
+                                                },
+                                                "doc": "Type inferred from '{\"Date\":\"2017-01-07\"}'"
+                                            },
+                                            {
+                                                "name": "Employment",
+                                                "type": "string",
+                                                "doc": "Type inferred from '\"gasdfasdf\"'"
+                                            }
+                                        ]
+                                    },
+                                    "doc": "Type inferred from '{\"RelatedEntityRef\":\"bbbc8bfcfeba41d9a2711c673536de50\",\"PersonName\":{\"FirstName\":\"VANCE\",\"OtherName\":\"agsdf\",\"Surname\":\"CREED\"},\"DateOfBirth\":{\"Date\":\"2017-01-07\"},\"Employment\":\"gasdfasdf\"}'"
+                                }
+                            ]
+                        },
+                        "doc": "Type inferred from '{\"Identifier\":\"bbbc8bfcfeba41d9a2711c673536de50\",\"Person\":{\"RelatedEntityRef\":\"bbbc8bfcfeba41d9a2711c673536de50\",\"PersonName\":{\"FirstName\":\"VANCE\",\"OtherName\":\"agsdf\",\"Surname\":\"CREED\"},\"DateOfBirth\":{\"Date\":\"2017-01-07\"},\"Employment\":\"gasdfasdf\"}}'"
+                    }
+                ]
+            },
+            "doc": "Type inferred from '{\"Party\":{\"Identifier\":\"bbbc8bfcfeba41d9a2711c673536de50\",\"Person\":{\"RelatedEntityRef\":\"bbbc8bfcfeba41d9a2711c673536de50\",\"PersonName\":{\"FirstName\":\"VANCE\",\"OtherName\":\"agsdf\",\"Surname\":\"CREED\"},\"DateOfBirth\":{\"Date\":\"2017-01-07\"},\"Employment\":\"gasdfasdf\"}}}'"
+        },
+        {
+            "name": "FinancialSegment",
+            "type": {
+                "type": "record",
+                "name": "FinancialSegment",
+                "fields": [
+                    {
+                        "name": "ValueItem",
+                        "type": {
+                            "type": "record",
+                            "name": "ValueItem",
+                            "namespace": "au.com.cba.kafka.lmi.core",
+                            "fields": [
+                                {
+                                    "name": "Identifier",
+                                    "type": "string",
+                                    "doc": "Type inferred from '\"bbbc8bfcfeba41d9a2711c673536de50\"'"
+                                },
+                                {
+                                    "name": "Asset",
+                                    "type": {
+                                        "type": "record",
+                                        "name": "Asset",
+                                        "namespace": "au.com.cba.kafka.lmi.core",
+                                        "fields": [
+                                            {
+                                                "name": "RelatedEntityRef",
+                                                "type": "string",
+                                                "doc": "Type inferred from '\"bbbc8bfcfeba41d9a2711c673536de50\"'"
+                                            },
+                                            {
+                                                "name": "RealEstate",
+                                                "type": {
+                                                    "type": "record",
+                                                    "name": "RealEstate",
+                                                    "namespace": "au.com.cba.kafka.lmi.core",
+                                                    "fields": [
+                                                        {
+                                                            "name": "Residential",
+                                                            "type": "string",
+                                                            "doc": "Type inferred from '\"adgasd\"'"
+                                                        },
+                                                        {
+                                                            "name": "ContractPrice",
+                                                            "type": "string",
+                                                            "doc": "Type inferred from '\"gasdfasdf\"'"
+                                                        },
+                                                        {
+                                                            "name": "Location",
+                                                            "type": {
+                                                                "type": "record",
+                                                                "name": "Location",
+                                                                "namespace": "au.com.cba.kafka.lmi.core",
+                                                                "fields": [
+                                                                    {
+                                                                        "name": "Address",
+                                                                        "type": {
+                                                                            "type": "record",
+                                                                            "name": "Address",
+                                                                            "namespace": "au.com.cba.kafka.lmi.core",
+                                                                            "fields": [
+                                                                                {
+                                                                                    "name": "BuildingName",
+                                                                                    "type": "string",
+                                                                                    "doc": "Type inferred from '\"175 Pitt Street\"'"
+                                                                                },
+                                                                                {
+                                                                                    "name": "City",
+                                                                                    "type": "string",
+                                                                                    "doc": "Type inferred from '\"SYDNEY\"'"
+                                                                                },
+                                                                                {
+                                                                                    "name": "State",
+                                                                                    "type": "string",
+                                                                                    "doc": "Type inferred from '\"VIC\"'"
+                                                                                },
+                                                                                {
+                                                                                    "name": "Postcode",
+                                                                                    "type": "int",
+                                                                                    "doc": "Type inferred from '2000'"
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        "doc": "Type inferred from '{\"BuildingName\":\"175 Pitt Street\",\"City\":\"SYDNEY\",\"State\":\"VIC\",\"Postcode\":2000}'"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "doc": "Type inferred from '{\"Address\":{\"BuildingName\":\"175 Pitt Street\",\"City\":\"SYDNEY\",\"State\":\"VIC\",\"Postcode\":2000}}'"
+                                                        }
+                                                    ]
+                                                },
+                                                "doc": "Type inferred from '{\"Residential\":\"adgasd\",\"ContractPrice\":\"gasdfasdf\",\"Location\":{\"Address\":{\"BuildingName\":\"175 Pitt Street\",\"City\":\"SYDNEY\",\"State\":\"VIC\",\"Postcode\":2000}}}'"
+                                            }
+                                        ]
+                                    },
+                                    "doc": "Type inferred from '{\"RelatedEntityRef\":\"bbbc8bfcfeba41d9a2711c673536de50\",\"RealEstate\":{\"Residential\":\"adgasd\",\"ContractPrice\":\"gasdfasdf\",\"Location\":{\"Address\":{\"BuildingName\":\"175 Pitt Street\",\"City\":\"SYDNEY\",\"State\":\"VIC\",\"Postcode\":2000}}}}'"
+                                }
+                            ]
+                        },
+                        "doc": "Type inferred from '{\"Identifier\":\"bbbc8bfcfeba41d9a2711c673536de50\",\"Asset\":{\"RelatedEntityRef\":\"bbbc8bfcfeba41d9a2711c673536de50\",\"RealEstate\":{\"Residential\":\"adgasd\",\"ContractPrice\":\"gasdfasdf\",\"Location\":{\"Address\":{\"BuildingName\":\"175 Pitt Street\",\"City\":\"SYDNEY\",\"State\":\"VIC\",\"Postcode\":2000}}}}}'"
+                    }
+                ]
+            },
+            "doc": "Type inferred from '{\"ValueItem\":{\"Identifier\":\"bbbc8bfcfeba41d9a2711c673536de50\",\"Asset\":{\"RelatedEntityRef\":\"bbbc8bfcfeba41d9a2711c673536de50\",\"RealEstate\":{\"Residential\":\"adgasd\",\"ContractPrice\":\"gasdfasdf\",\"Location\":{\"Address\":{\"BuildingName\":\"175 Pitt Street\",\"City\":\"SYDNEY\",\"State\":\"VIC\",\"Postcode\":2000}}}}}}'"
+        },
+        {
+            "name": "LoanDetailSegment",
+            "type": {
+                "type": "record",
+                "name": "LoanDetailSegment",
+                "fields": [
+                    {
+                        "name": "LoanDetails",
+                        "type": {
+                            "type": "record",
+                            "name": "LoanDetails",
+                            "namespace": "au.com.cba.kafka.lmi.core",
+                            "fields": [
+                                {
+                                    "name": "Identifier",
+                                    "type": "string",
+                                    "doc": "Type inferred from '\"bbbc8bfcfeba41d9a2711c673536de50\"'"
+                                },
+                                {
+                                    "name": "LoanTerm",
+                                    "type": "int",
+                                    "doc": "Type inferred from '96'"
+                                },
+                                {
+                                    "name": "AmountRequested",
+                                    "type": "string",
+                                    "doc": "Type inferred from '\"100.00\"'"
+                                },
+                                {
+                                    "name": "LoanPurpose",
+                                    "type": {
+                                        "type": "record",
+                                        "name": "LoanPurpose",
+                                        "namespace": "au.com.cba.kafka.lmi.core",
+                                        "fields": [
+                                            {
+                                                "name": "LendingPurposeCode",
+                                                "type": "int",
+                                                "doc": "Type inferred from '2'"
+                                            }
+                                        ]
+                                    },
+                                    "doc": "Type inferred from '{\"LendingPurposeCode\":2}'"
+                                },
+                                {
+                                    "name": "RelatedEntityRef",
+                                    "type": "string",
+                                    "doc": "Type inferred from '\"bbbc8bfcfeba41d9a2711c673536de50\"'"
+                                }
+                            ]
+                        },
+                        "doc": "Type inferred from '{\"Identifier\":\"bbbc8bfcfeba41d9a2711c673536de50\",\"LoanTerm\":96,\"AmountRequested\":\"100.00\",\"LoanPurpose\":{\"LendingPurposeCode\":2},\"RelatedEntityRef\":\"bbbc8bfcfeba41d9a2711c673536de50\"}'"
+                    }
+                ]
+            },
+            "doc": "Type inferred from '{\"LoanDetails\":{\"Identifier\":\"bbbc8bfcfeba41d9a2711c673536de50\",\"LoanTerm\":96,\"AmountRequested\":\"100.00\",\"LoanPurpose\":{\"LendingPurposeCode\":2},\"RelatedEntityRef\":\"bbbc8bfcfeba41d9a2711c673536de50\"}}'"
+        },
+        {
+            "name": "MortgageInsuranceSegment",
+            "type": {
+                "type": "record",
+                "name": "MortgageInsuranceSegment",
+                "fields": [
+                    {
+                        "name": "MortgageInsurance",
+                        "type": {
+                            "type": "record",
+                            "name": "MortgageInsurance",
+                            "namespace": "au.com.cba.kafka.lmi.core",
+                            "fields": [
+                                {
+                                    "name": "Identifier",
+                                    "type": "string",
+                                    "doc": "Type inferred from '\"bbbc8bfcfeba41d9a2711c673536de50\"'"
+                                },
+                                {
+                                    "name": "ApprovalDate",
+                                    "type": {
+                                        "type": "record",
+                                        "name": "ApprovalDate",
+                                        "namespace": "au.com.cba.kafka.lmi.core",
+                                        "fields": [
+                                            {
+                                                "name": "Date",
+                                                "type": "string",
+                                                "doc": "Type inferred from '\"2017-01-07\"'"
+                                            }
+                                        ]
+                                    },
+                                    "doc": "Type inferred from '{\"Date\":\"2017-01-07\"}'"
+                                }
+                            ]
+                        },
+                        "doc": "Type inferred from '{\"Identifier\":\"bbbc8bfcfeba41d9a2711c673536de50\",\"ApprovalDate\":{\"Date\":\"2017-01-07\"}}'"
+                    }
+                ]
+            },
+            "doc": "Type inferred from '{\"MortgageInsurance\":{\"Identifier\":\"bbbc8bfcfeba41d9a2711c673536de50\",\"ApprovalDate\":{\"Date\":\"2017-01-07\"}}}'"
+        }
+    ]
+}

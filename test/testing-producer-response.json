@@ -1,0 +1,601 @@
+{
+    "Topic": "test1",
+    "Partition": {
+        "Value": 0,
+        "IsSpecial": false
+    },
+    "Offset": {
+        "Value": 9,
+        "IsSpecial": false
+    },
+    "TopicPartition": {
+        "Topic": "test1",
+        "Partition": {
+            "Value": 0,
+            "IsSpecial": false
+        }
+    },
+    "TopicPartitionOffset": {
+        "Topic": "test1",
+        "Partition": {
+            "Value": 0,
+            "IsSpecial": false
+        },
+        "Offset": {
+            "Value": 9,
+            "IsSpecial": false
+        },
+        "TopicPartition": {
+            "Topic": "test1",
+            "Partition": {
+                "Value": 0,
+                "IsSpecial": false
+            }
+        }
+    },
+    "Status": 2,
+    "Message": {
+        "Key": "TestKey",
+        "Value": {
+            "Schema": {
+                "Tag": 8,
+                "Name": "ApplicationFulfilmentMessage",
+                "Fullname": "au.com.cba.kafka.lmi.core.ApplicationFulfilmentMessage"
+            },
+            "RequestId": "string",
+            "LenderReference": "string",
+            "CustomerId": 0,
+            "FunderId": 0,
+            "OriginatorId": 0,
+            "InsuredPartyId": 0,
+            "LoanSourceChannel": "string",
+            "LenderLoanApprovalDate": "string",
+            "LoanSettlementDate": "string",
+            "PreAllocatedLmiPolicyNumber": 0,
+            "TopUp": true,
+            "OtherInsurerDetails": {
+                "Schema": {
+                    "Tag": 8,
+                    "Name": "OtherInsurerDetails",
+                    "Fullname": "au.com.cba.kafka.lmi.core.OtherInsurerDetails"
+                },
+                "OutstandingLoanBalanceInsured": 0,
+                "LmiPremiumPaidDate": "string",
+                "ExistingPremiumPaid": 0,
+                "PreviousInsuredLoanAmount": 0
+            },
+            "PreInforceVariation": true,
+            "PreInforceLmiPolicyNumber": 0,
+            "BrokerName": "string",
+            "ProductName": "string",
+            "CoverType": "string",
+            "CoverRate": 0,
+            "CoverTerm": 0,
+            "LvrCutOff": 0,
+            "PremiumPayment": "string",
+            "UnderwritingType": "string",
+            "PremiumToBeCapitalised": true,
+            "ScheduledLoanBalance": 0,
+            "PremiumQuoteNumber": 0,
+            "LendersApplicationRiskScore": 0,
+            "ExistingLmiPolicyNumber": 0,
+            "ManualReviewRequired": true,
+            "StaffDiscountApplicable": true,
+            "Applicants": [
+                {
+                    "Schema": {
+                        "Tag": 8,
+                        "Name": "Applicant",
+                        "Fullname": "au.com.cba.kafka.lmi.core.Applicant"
+                    },
+                    "ApplicantType": "string",
+                    "ApplicantRole": "string",
+                    "Individual": {
+                        "Schema": {
+                            "Tag": 8,
+                            "Name": "ApplicantIndividual",
+                            "Fullname": "au.com.cba.kafka.lmi.core.ApplicantIndividual"
+                        },
+                        "FirstHomeBuyer": true,
+                        "FirstName": "string",
+                        "MiddleName": "string",
+                        "Surname": "string",
+                        "DateOfBirth": "string",
+                        "MaritalStatus": "string",
+                        "DriversLicenseNumber": "string",
+                        "PermanentResident": true,
+                        "EmploymentDetail": {
+                            "Schema": {
+                                "Tag": 8,
+                                "Name": "EmploymentDetail",
+                                "Fullname": "au.com.cba.kafka.lmi.core.EmploymentDetail"
+                            },
+                            "CurrentEmploymentStatus": "string",
+                            "EmploymentBasis": "string",
+                            "IndustryType": "string"
+                        },
+                        "ResidentialAddress": {
+                            "Schema": {
+                                "Tag": 8,
+                                "Name": "Address",
+                                "Fullname": "au.com.cba.kafka.lmi.core.Address"
+                            },
+                            "UnitNumber": "string",
+                            "StreetNumber": "string",
+                            "StreetName": "string",
+                            "StreetType": "string",
+                            "Suburb": "string",
+                            "State": "string",
+                            "Postcode": "string",
+                            "Country": "string"
+                        }
+                    },
+                    "Company": {
+                        "Schema": {
+                            "Tag": 8,
+                            "Name": "Company",
+                            "Fullname": "au.com.cba.kafka.lmi.core.Company"
+                        },
+                        "CompanyName": "string",
+                        "CompanyType": "string",
+                        "CompanyABN": "string",
+                        "CompanyAddress": {
+                            "Schema": {
+                                "Tag": 8,
+                                "Name": "Address",
+                                "Fullname": "au.com.cba.kafka.lmi.core.Address"
+                            },
+                            "UnitNumber": "string",
+                            "StreetNumber": "string",
+                            "StreetName": "string",
+                            "StreetType": "string",
+                            "Suburb": "string",
+                            "State": "string",
+                            "Postcode": "string",
+                            "Country": "string"
+                        }
+                    },
+                    "Income": {
+                        "Schema": {
+                            "Tag": 8,
+                            "Name": "IncomeInformation",
+                            "Fullname": "au.com.cba.kafka.lmi.core.IncomeInformation"
+                        },
+                        "AnnualGrossIncome": 0,
+                        "AnnualGrossRentalIncome": 0
+                    },
+                    "PrimaryBorrower": true,
+                    "CreditScore": 0
+                }
+            ],
+            "Serviceability": {
+                "Schema": {
+                    "Tag": 8,
+                    "Name": "Serviceability",
+                    "Fullname": "au.com.cba.kafka.lmi.core.Serviceability"
+                },
+                "LendersServiceabilityType": "string",
+                "LendersServiceabilityNdiRatio": 0,
+                "LendersNetMonthlySurplus": 0,
+                "LendersDebtServicingRatio": 0,
+                "TotalSecuredLiabilitiesAmount": 0,
+                "TotalUnsecuredLiabilitiesAmount": 0,
+                "TotalMonthlyRepaymentAmount": 0,
+                "ActualAnnualLivingCost": 0
+            },
+            "Securities": [
+                {
+                    "Schema": {
+                        "Tag": 8,
+                        "Name": "SecurityInfomation",
+                        "Fullname": "au.com.cba.kafka.lmi.core.SecurityInfomation"
+                    },
+                    "SecurityType": "string",
+                    "OccupancyType": "string",
+                    "SecurityAddress": {
+                        "Schema": {
+                            "Tag": 8,
+                            "Name": "Address",
+                            "Fullname": "au.com.cba.kafka.lmi.core.Address"
+                        },
+                        "UnitNumber": "string",
+                        "StreetNumber": "string",
+                        "StreetName": "string",
+                        "StreetType": "string",
+                        "Suburb": "string",
+                        "State": "string",
+                        "Postcode": "string",
+                        "Country": "string"
+                    },
+                    "SecurityTypeStatus": "string",
+                    "EstimatedValue": 0,
+                    "PurchasePrice": 0,
+                    "ProjectCosts": 0,
+                    "GuaranteeAmount": 0,
+                    "GuarantorExistingLoanAmount": 0,
+                    "ValuationPlatform": "string",
+                    "ValuationId": "string",
+                    "ValuationAmount": 0,
+                    "ContractOfSaleDate": "string",
+                    "ValuationDetails": {
+                        "Schema": {
+                            "Tag": 8,
+                            "Name": "ValuationDetails",
+                            "Fullname": "au.com.cba.kafka.lmi.core.ValuationDetails"
+                        },
+                        "ValuationType": "string",
+                        "ValuerCompanyName": "string",
+                        "ValuationDate": "string",
+                        "ValuerFirstName": "string",
+                        "ValuerSurname": "string",
+                        "LivingAreaInSqm": 0,
+                        "SiteArea": 0,
+                        "SiteAreaUnitOfMeasurement": "string",
+                        "NoOfBedrooms": 0,
+                        "CurrentUse": "string",
+                        "Marketability": "string",
+                        "SellingPeriodGreaterThanSixMonths": true,
+                        "CommentsForSellingPeriod": "string",
+                        "EssentialRepairsRequired": true,
+                        "EssentialRepairDetails": "string",
+                        "InternalCondition": "string",
+                        "ExternalCondition": "string",
+                        "WeeklyRentalValueUnfurnished": 0,
+                        "PropertyAndMarketRiskRatings": {
+                            "Schema": {
+                                "Tag": 8,
+                                "Name": "PropertyAndMarketRiskRatings",
+                                "Fullname": "au.com.cba.kafka.lmi.core.PropertyAndMarketRiskRatings"
+                            },
+                            "LocationAndNeighbourhood": "string",
+                            "Land": "string",
+                            "EnvironmentalIssues": "string",
+                            "Improvements": "string",
+                            "MarketVolatality": "string",
+                            "RecentMarketDirection": "string",
+                            "LocalEconomyImpact": "string",
+                            "MarketSegmentConditions": "string"
+                        },
+                        "ComparableSales": [
+                            {
+                                "Schema": {
+                                    "Tag": 8,
+                                    "Name": "ComparableSale",
+                                    "Fullname": "au.com.cba.kafka.lmi.core.ComparableSale"
+                                },
+                                "SaleAddress": {
+                                    "Schema": {
+                                        "Tag": 8,
+                                        "Name": "Address",
+                                        "Fullname": "au.com.cba.kafka.lmi.core.Address"
+                                    },
+                                    "UnitNumber": "string",
+                                    "StreetNumber": "string",
+                                    "StreetName": "string",
+                                    "StreetType": "string",
+                                    "Suburb": "string",
+                                    "State": "string",
+                                    "Postcode": "string",
+                                    "Country": "string"
+                                },
+                                "SaleDate": "string",
+                                "SalePrice": 0
+                            }
+                        ],
+                        "CustForecastStandardDeviation": 0
+                    }
+                }
+            ],
+            "Loans": [
+                {
+                    "Schema": {
+                        "Tag": 8,
+                        "Name": "LoanInformation",
+                        "Fullname": "au.com.cba.kafka.lmi.core.LoanInformation"
+                    },
+                    "LenderLoanAccountId": "string",
+                    "LoanTermInMonths": 0,
+                    "LoanType": "string",
+                    "LoanRepaymentType": "string",
+                    "LoanAmount": 0,
+                    "LoanPurpose": "string",
+                    "InitialInterestRateType": "string",
+                    "FixedRatePeriodInMonths": 0,
+                    "InterestOnlyPeriodInMonths": 0
+                }
+            ],
+            "ContactName": "string",
+            "ContactPhone": "string",
+            "ContactEmail": "string",
+            "AdditionalNotes": "string",
+            "Campaign": "string"
+        },
+        "Timestamp": {
+            "Type": 1,
+            "UnixTimestampMs": 1667974834796,
+            "UtcDateTime": "2022-11-09T06:20:34.796Z"
+        },
+        "Headers": []
+    },
+    "Key": "TestKey",
+    "Value": {
+        "Schema": {
+            "Tag": 8,
+            "Name": "ApplicationFulfilmentMessage",
+            "Fullname": "au.com.cba.kafka.lmi.core.ApplicationFulfilmentMessage"
+        },
+        "RequestId": "string",
+        "LenderReference": "string",
+        "CustomerId": 0,
+        "FunderId": 0,
+        "OriginatorId": 0,
+        "InsuredPartyId": 0,
+        "LoanSourceChannel": "string",
+        "LenderLoanApprovalDate": "string",
+        "LoanSettlementDate": "string",
+        "PreAllocatedLmiPolicyNumber": 0,
+        "TopUp": true,
+        "OtherInsurerDetails": {
+            "Schema": {
+                "Tag": 8,
+                "Name": "OtherInsurerDetails",
+                "Fullname": "au.com.cba.kafka.lmi.core.OtherInsurerDetails"
+            },
+            "OutstandingLoanBalanceInsured": 0,
+            "LmiPremiumPaidDate": "string",
+            "ExistingPremiumPaid": 0,
+            "PreviousInsuredLoanAmount": 0
+        },
+        "PreInforceVariation": true,
+        "PreInforceLmiPolicyNumber": 0,
+        "BrokerName": "string",
+        "ProductName": "string",
+        "CoverType": "string",
+        "CoverRate": 0,
+        "CoverTerm": 0,
+        "LvrCutOff": 0,
+        "PremiumPayment": "string",
+        "UnderwritingType": "string",
+        "PremiumToBeCapitalised": true,
+        "ScheduledLoanBalance": 0,
+        "PremiumQuoteNumber": 0,
+        "LendersApplicationRiskScore": 0,
+        "ExistingLmiPolicyNumber": 0,
+        "ManualReviewRequired": true,
+        "StaffDiscountApplicable": true,
+        "Applicants": [
+            {
+                "Schema": {
+                    "Tag": 8,
+                    "Name": "Applicant",
+                    "Fullname": "au.com.cba.kafka.lmi.core.Applicant"
+                },
+                "ApplicantType": "string",
+                "ApplicantRole": "string",
+                "Individual": {
+                    "Schema": {
+                        "Tag": 8,
+                        "Name": "ApplicantIndividual",
+                        "Fullname": "au.com.cba.kafka.lmi.core.ApplicantIndividual"
+                    },
+                    "FirstHomeBuyer": true,
+                    "FirstName": "string",
+                    "MiddleName": "string",
+                    "Surname": "string",
+                    "DateOfBirth": "string",
+                    "MaritalStatus": "string",
+                    "DriversLicenseNumber": "string",
+                    "PermanentResident": true,
+                    "EmploymentDetail": {
+                        "Schema": {
+                            "Tag": 8,
+                            "Name": "EmploymentDetail",
+                            "Fullname": "au.com.cba.kafka.lmi.core.EmploymentDetail"
+                        },
+                        "CurrentEmploymentStatus": "string",
+                        "EmploymentBasis": "string",
+                        "IndustryType": "string"
+                    },
+                    "ResidentialAddress": {
+                        "Schema": {
+                            "Tag": 8,
+                            "Name": "Address",
+                            "Fullname": "au.com.cba.kafka.lmi.core.Address"
+                        },
+                        "UnitNumber": "string",
+                        "StreetNumber": "string",
+                        "StreetName": "string",
+                        "StreetType": "string",
+                        "Suburb": "string",
+                        "State": "string",
+                        "Postcode": "string",
+                        "Country": "string"
+                    }
+                },
+                "Company": {
+                    "Schema": {
+                        "Tag": 8,
+                        "Name": "Company",
+                        "Fullname": "au.com.cba.kafka.lmi.core.Company"
+                    },
+                    "CompanyName": "string",
+                    "CompanyType": "string",
+                    "CompanyABN": "string",
+                    "CompanyAddress": {
+                        "Schema": {
+                            "Tag": 8,
+                            "Name": "Address",
+                            "Fullname": "au.com.cba.kafka.lmi.core.Address"
+                        },
+                        "UnitNumber": "string",
+                        "StreetNumber": "string",
+                        "StreetName": "string",
+                        "StreetType": "string",
+                        "Suburb": "string",
+                        "State": "string",
+                        "Postcode": "string",
+                        "Country": "string"
+                    }
+                },
+                "Income": {
+                    "Schema": {
+                        "Tag": 8,
+                        "Name": "IncomeInformation",
+                        "Fullname": "au.com.cba.kafka.lmi.core.IncomeInformation"
+                    },
+                    "AnnualGrossIncome": 0,
+                    "AnnualGrossRentalIncome": 0
+                },
+                "PrimaryBorrower": true,
+                "CreditScore": 0
+            }
+        ],
+        "Serviceability": {
+            "Schema": {
+                "Tag": 8,
+                "Name": "Serviceability",
+                "Fullname": "au.com.cba.kafka.lmi.core.Serviceability"
+            },
+            "LendersServiceabilityType": "string",
+            "LendersServiceabilityNdiRatio": 0,
+            "LendersNetMonthlySurplus": 0,
+            "LendersDebtServicingRatio": 0,
+            "TotalSecuredLiabilitiesAmount": 0,
+            "TotalUnsecuredLiabilitiesAmount": 0,
+            "TotalMonthlyRepaymentAmount": 0,
+            "ActualAnnualLivingCost": 0
+        },
+        "Securities": [
+            {
+                "Schema": {
+                    "Tag": 8,
+                    "Name": "SecurityInfomation",
+                    "Fullname": "au.com.cba.kafka.lmi.core.SecurityInfomation"
+                },
+                "SecurityType": "string",
+                "OccupancyType": "string",
+                "SecurityAddress": {
+                    "Schema": {
+                        "Tag": 8,
+                        "Name": "Address",
+                        "Fullname": "au.com.cba.kafka.lmi.core.Address"
+                    },
+                    "UnitNumber": "string",
+                    "StreetNumber": "string",
+                    "StreetName": "string",
+                    "StreetType": "string",
+                    "Suburb": "string",
+                    "State": "string",
+                    "Postcode": "string",
+                    "Country": "string"
+                },
+                "SecurityTypeStatus": "string",
+                "EstimatedValue": 0,
+                "PurchasePrice": 0,
+                "ProjectCosts": 0,
+                "GuaranteeAmount": 0,
+                "GuarantorExistingLoanAmount": 0,
+                "ValuationPlatform": "string",
+                "ValuationId": "string",
+                "ValuationAmount": 0,
+                "ContractOfSaleDate": "string",
+                "ValuationDetails": {
+                    "Schema": {
+                        "Tag": 8,
+                        "Name": "ValuationDetails",
+                        "Fullname": "au.com.cba.kafka.lmi.core.ValuationDetails"
+                    },
+                    "ValuationType": "string",
+                    "ValuerCompanyName": "string",
+                    "ValuationDate": "string",
+                    "ValuerFirstName": "string",
+                    "ValuerSurname": "string",
+                    "LivingAreaInSqm": 0,
+                    "SiteArea": 0,
+                    "SiteAreaUnitOfMeasurement": "string",
+                    "NoOfBedrooms": 0,
+                    "CurrentUse": "string",
+                    "Marketability": "string",
+                    "SellingPeriodGreaterThanSixMonths": true,
+                    "CommentsForSellingPeriod": "string",
+                    "EssentialRepairsRequired": true,
+                    "EssentialRepairDetails": "string",
+                    "InternalCondition": "string",
+                    "ExternalCondition": "string",
+                    "WeeklyRentalValueUnfurnished": 0,
+                    "PropertyAndMarketRiskRatings": {
+                        "Schema": {
+                            "Tag": 8,
+                            "Name": "PropertyAndMarketRiskRatings",
+                            "Fullname": "au.com.cba.kafka.lmi.core.PropertyAndMarketRiskRatings"
+                        },
+                        "LocationAndNeighbourhood": "string",
+                        "Land": "string",
+                        "EnvironmentalIssues": "string",
+                        "Improvements": "string",
+                        "MarketVolatality": "string",
+                        "RecentMarketDirection": "string",
+                        "LocalEconomyImpact": "string",
+                        "MarketSegmentConditions": "string"
+                    },
+                    "ComparableSales": [
+                        {
+                            "Schema": {
+                                "Tag": 8,
+                                "Name": "ComparableSale",
+                                "Fullname": "au.com.cba.kafka.lmi.core.ComparableSale"
+                            },
+                            "SaleAddress": {
+                                "Schema": {
+                                    "Tag": 8,
+                                    "Name": "Address",
+                                    "Fullname": "au.com.cba.kafka.lmi.core.Address"
+                                },
+                                "UnitNumber": "string",
+                                "StreetNumber": "string",
+                                "StreetName": "string",
+                                "StreetType": "string",
+                                "Suburb": "string",
+                                "State": "string",
+                                "Postcode": "string",
+                                "Country": "string"
+                            },
+                            "SaleDate": "string",
+                            "SalePrice": 0
+                        }
+                    ],
+                    "CustForecastStandardDeviation": 0
+                }
+            }
+        ],
+        "Loans": [
+            {
+                "Schema": {
+                    "Tag": 8,
+                    "Name": "LoanInformation",
+                    "Fullname": "au.com.cba.kafka.lmi.core.LoanInformation"
+                },
+                "LenderLoanAccountId": "string",
+                "LoanTermInMonths": 0,
+                "LoanType": "string",
+                "LoanRepaymentType": "string",
+                "LoanAmount": 0,
+                "LoanPurpose": "string",
+                "InitialInterestRateType": "string",
+                "FixedRatePeriodInMonths": 0,
+                "InterestOnlyPeriodInMonths": 0
+            }
+        ],
+        "ContactName": "string",
+        "ContactPhone": "string",
+        "ContactEmail": "string",
+        "AdditionalNotes": "string",
+        "Campaign": "string"
+    },
+    "Timestamp": {
+        "Type": 1,
+        "UnixTimestampMs": 1667974834796,
+        "UtcDateTime": "2022-11-09T06:20:34.796Z"
+    },
+    "Headers": []
+}

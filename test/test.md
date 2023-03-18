@@ -1,0 +1,8 @@
+- Producer
+    - Read from batch files
+- Consumer
+    - Data enrichment
+- PS API
+    - Polling status process
+    - Replace policy
+    - Handling exception/negtive scenarios

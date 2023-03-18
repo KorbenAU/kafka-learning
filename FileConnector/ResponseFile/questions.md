@@ -1,0 +1,4 @@
+- ProcessedTime
+    - From Timestamp in header?
+- AdditionalLoanAmount
+    - Calculate?

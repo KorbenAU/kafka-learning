@@ -1,0 +1,46 @@
+[
+    {
+        "FileName": "CREATE_202005202200720.req",
+        "Offsets": [
+            {
+                "StartIndex": 0,
+                "EndIndex": 0,
+                "LastError": "Local: Key serialization error",
+                "LastProcessedBy": "192.168.1.40"
+            }
+        ]
+    },
+    {
+        "FileName": "CREATE_202005212200151.req",
+        "Offsets": [
+            {
+                "StartIndex": 0,
+                "EndIndex": 0,
+                "LastError": "Local: Key serialization error",
+                "LastProcessedBy": "192.168.1.40"
+            }
+        ]
+    },
+    {
+        "FileName": "CREATE_202005212219921.req",
+        "Offsets": [
+            {
+                "StartIndex": 0,
+                "EndIndex": 0,
+                "LastError": "Local: Key serialization error",
+                "LastProcessedBy": "192.168.1.40"
+            }
+        ]
+    },
+    {
+        "FileName": "CREATE_20200521223743.req",
+        "Offsets": [
+            {
+                "StartIndex": 0,
+                "EndIndex": 2,
+                "LastError": "Object reference not set to an instance of an object.",
+                "LastProcessedBy": "192.168.1.40"
+            }
+        ]
+    }
+]

@@ -1,6 +1,7 @@
 {
     "type": "record",
     "name": "Credit Application Schema",
+    
     "fields": [
         {
             "name": "Package",

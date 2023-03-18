@@ -1,0 +1,143 @@
+{
+    "Application": {
+        "Identifier": "",
+        "Submission": {
+            "Date": ""
+        },
+        "Branch": {
+            "BranchDomicile": {
+                "BSB": 3159
+            }
+        },
+        "PartySegment": {
+            "Party": [
+                {
+                    "Identifier": "",
+                    "Person": {
+                        "RelatedEntityRef": "",
+                        "PersonName": {
+                            "FirstName": "Yavuz",
+                            "OtherName": "",
+                            "Surname": "Yamankol"
+                        },
+                        "DateOfBirth": {
+                            "Date": ""
+                        },
+                        "Employment": ""
+                    }
+                },
+                {
+                    "Identifier": "",
+                    "Person": {
+                        "RelatedEntityRef": "",
+                        "PersonName": {
+                            "FirstName": "Feriza",
+                            "OtherName": "",
+                            "Surname": "Yamankol"
+                        },
+                        "DateOfBirth": {
+                            "Date": ""
+                        },
+                        "Employment": ""
+                    }
+                }
+            ]
+        },
+        "FinancialSegment": {
+            "ValueItem": [
+                {
+                    "Identifier": "",
+                    "Asset": {
+                        "RelatedEntityRef": "",
+                        "RealEstate": {
+                            "Residential": "",
+                            "ContractPrice": "",
+                            "Location": {
+                                "Address": {
+                                    "BuildingName": "2 Tyquin Ct||||",
+                                    "City": "SHEPPARTON",
+                                    "State": "",
+                                    "Postcode": 3630
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "Identifier": "",
+                    "Asset": {
+                        "RelatedEntityRef": "",
+                        "RealEstate": {
+                            "Residential": "",
+                            "ContractPrice": "",
+                            "Location": {
+                                "Address": {
+                                    "BuildingName": "22 Olympic Ave||||",
+                                    "City": "SHEPPARTON",
+                                    "State": "",
+                                    "Postcode": 3630
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "Identifier": "",
+                    "Asset": {
+                        "RelatedEntityRef": "",
+                        "RealEstate": {
+                            "Residential": "",
+                            "ContractPrice": "",
+                            "Location": {
+                                "Address": {
+                                    "BuildingName": "4 Wartook Court",
+                                    "City": "KIALLA",
+                                    "State": "",
+                                    "Postcode": 3631
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "LoanDetailSegment": {
+            "LoanDetails": [
+                {
+                    "Identifier": "",
+                    "LoanTerm": 360,
+                    "AmountRequested": "",
+                    "LoanPurpose": {
+                        "LendingPurposeCode": "07,07"
+                    },
+                    "RelatedEntityRef": ""
+                },
+                {
+                    "Identifier": "",
+                    "LoanTerm": 360,
+                    "AmountRequested": "",
+                    "LoanPurpose": {
+                        "LendingPurposeCode": "07,07"
+                    },
+                    "RelatedEntityRef": ""
+                }
+            ]
+        },
+        "MortgageInsuranceSegment": {
+            "MortgageInsurance": [
+                {
+                    "Identifier": "",
+                    "ApprovalDate": {
+                        "Date": ""
+                    }
+                },
+                {
+                    "Identifier": "",
+                    "ApprovalDate": {
+                        "Date": ""
+                    }
+                }
+            ]
+        }
+    }
+}

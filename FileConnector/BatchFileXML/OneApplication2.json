@@ -1,0 +1,163 @@
+{
+    "Identifier": "sdfsdfsdf",
+    "Submission": {
+        "Date": {
+            "Year": "2009",
+            "Month": "06",
+            "Day": "19"
+        }
+    },
+    "Branch": {
+        "BranchDomicile": {
+            "BSB": "3159"
+        }
+    },
+    "PartySegment": [
+        {
+            "Type": "B",
+            "Identifier": "asdfasdf",
+            "Person": {
+                "RelatedEntityRef": "asdfsfd",
+                "PersonName": {
+                    "FirstName": "Yavuz",
+                    "OtherName": "asdfsdf",
+                    "Surname": "Yamankol"
+                },
+                "DateOfBirth": {
+                    "Date": {
+                        "Year": "2012",
+                        "Month": "12",
+                        "Day": "3"
+                    }
+                },
+                "Employment": {
+                    "Group": "01asdf"
+                }
+            }
+        },
+        {
+            "Type": "B",
+            "Identifier": {
+                "UniqueID": "11asdfsd2311"
+            },
+            "Person": {
+                "RelatedEntityRef": "assdfsdf",
+                "PersonName": {
+                    "FirstName": "Feriza",
+                    "OtherName": "sdf",
+                    "Surname": "Yamankol"
+                },
+                "DateOfBirth": {
+                    "Date": {
+                        "Year": "",
+                        "Month": "",
+                        "Day": ""
+                    }
+                },
+                "Employment": {
+                    "Group": "07"
+                }
+            }
+        }
+    ],
+    "FinancialSegment": {
+        "ValueItem": [
+            {
+                "Identifier": "asdfasdf",
+                "Asset": {
+                    "RelatedEntityRef": "asdfasdfsf",
+                    "RealEstate": {
+                        "FloorArea": "asdasf",
+                        "ResidentialType": "asdfsdf",
+                        "ContractPriceAmount": 21000.0,
+                        "Location": {
+                            "Address": {
+                                "BuildingName": "2 Tyquin Ct||||",
+                                "City": "SHEPPARTON",
+                                "State": "VIC",
+                                "Postcode": "3630"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "Identifier": "asdfasdf",
+                "Asset": {
+                    "RelatedEntityRef": "asdfasdfsf",
+                    "RealEstate": {
+                        "FloorArea": "asdasf",
+                        "ResidentialType": "asdfsdf",
+                        "ContractPriceAmount": 21000.0,
+                        "Location": {
+                            "Address": {
+                                "BuildingName": "2 Tyquin Ct||||",
+                                "City": "SHEPPARTON",
+                                "State": "VIC",
+                                "Postcode": "3630"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "LoanDetailSegment": [
+        {
+            "Identifier": "asdfasdf",
+            "LoanTerm": {
+                "Units": "Months",
+                "Value": "360"
+            },
+            "AmountRequested": 20000.22,
+            "LoanPurpose": {
+                "PrimaryPurpose": "Investment",
+                "LendingPurposeCode": "07,07"
+            },
+            "RelatedEntityRef": "sdfsdf"
+        },
+        {
+            "Identifier": "asdfasdf",
+            "LoanTerm": {
+                "Units": "Months",
+                "Value": "360"
+            },
+            "AmountRequested": 20000.22,
+            "LoanPurpose": {
+                "PrimaryPurpose": "Investment",
+                "LendingPurposeCode": "07,07"
+            },
+            "RelatedEntityRef": "sdfsdf"
+        }
+    ],
+    "MortgageInsuranceSegment": [
+        {
+            "ProductCode": "Standard",
+            "OutstandingBalanceIns": "0.00",
+            "CapitalisedAmount": "0.00",
+            "Identifier": {
+                "UniqueID": "43026420",
+                "Type": "MIAssigned"
+            },
+            "ApprovalDate": {
+                "Year": "2007",
+                "Month": "07",
+                "Day": "26"
+            }
+        },
+        {
+            "ProductCode": "Standard",
+            "OutstandingBalanceIns": "0.00",
+            "CapitalisedAmount": "0.00",
+            "Identifier": {
+                "UniqueID": "43026420",
+                "Type": "MIAssigned"
+            },
+            "ApprovalDate": {
+                "Year": "2007",
+                "Month": "07",
+                "Day": "26"
+            }
+        }
+    ]
+}

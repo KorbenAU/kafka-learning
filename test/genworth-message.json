@@ -1,0 +1,189 @@
+{
+    "requestId": "string",
+    "lenderReference": "string",
+    "customerId": 0,
+    "funderId": 0,
+    "originatorId": 0,
+    "insuredPartyId": 0,
+    "loanSourceChannel": "Retail",
+    "lenderLoanApprovalDate": "string",
+    "loanSettlementDate": "string",
+    "preAllocatedLmiPolicyNumber": 0,
+    "topUp": false,
+    "otherInsurerDetails": {
+        "outstandingLoanBalanceInsured": 0,
+        "lmiPremiumPaidDate": "string",
+        "existingPremiumPaid": 0,
+        "previousInsuredLoanAmount": 0
+    },
+    "preInforceVariation": false,
+    "preInforceLmiPolicyNumber": 0,
+    "brokerName": "string",
+    "productName": "Standard",
+    "coverType": "FullCover",
+    "coverRate": 0,
+    "coverTerm": 0,
+    "lvrCutOff": 0,
+    "premiumPayment": "MonthlyPremium",
+    "underwritingType": "STD",
+    "premiumToBeCapitalised": true,
+    "scheduledLoanBalance": 0,
+    "premiumQuoteNumber": 0,
+    "lendersApplicationRiskScore": 0,
+    "existingLmiPolicyNumber": 0,
+    "manualReviewRequired": true,
+    "staffDiscountApplicable": false,
+    "applicants": [
+        {
+            "applicantType": "Individual",
+            "applicantRole": "Borrower",
+            "individual": {
+                "firstHomeBuyer": false,
+                "firstName": "string",
+                "middleName": "string",
+                "surname": "string",
+                "dateOfBirth": "string",
+                "maritalStatus": "Defacto",
+                "driversLicenseNumber": "string",
+                "permanentResident": true,
+                "employmentDetail": {
+                    "currentEmploymentStatus": "PAYE",
+                    "employmentBasis": "FullTime",
+                    "industryType": "ACCOMMODATION_FOOD"
+                },
+                "residentialAddress": {
+                    "unitNumber": "string",
+                    "streetNumber": "string",
+                    "streetName": "string",
+                    "streetType": "string",
+                    "suburb": "string",
+                    "state": "NSW",
+                    "postcode": "string",
+                    "country": "string"
+                }
+            },
+            "company": {
+                "companyName": "string",
+                "companyType": "LTD",
+                "companyABN": "string",
+                "companyAddress": {
+                    "unitNumber": "string",
+                    "streetNumber": "string",
+                    "streetName": "string",
+                    "streetType": "string",
+                    "suburb": "string",
+                    "state": "NSW",
+                    "postcode": "string",
+                    "country": "string"
+                }
+            },
+            "income": {
+                "annualGrossIncome": 0,
+                "annualGrossRentalIncome": 0
+            },
+            "primaryBorrower": false,
+            "creditScore": 0
+        }
+    ],
+    "serviceability": {
+        "lendersServiceabilityType": "NDI",
+        "lendersServiceabilityNdiRatio": 0,
+        "lendersNetMonthlySurplus": 0,
+        "lendersDebtServicingRatio": 0,
+        "totalSecuredLiabilitiesAmount": 0,
+        "totalUnsecuredLiabilitiesAmount": 0,
+        "totalMonthlyRepaymentAmount": 0,
+        "actualAnnualLivingCost": 0
+    },
+    "securities": [
+        {
+            "securityType": "CA",
+            "occupancyType": "OwnerOccupied",
+            "securityAddress": {
+                "unitNumber": "string",
+                "streetNumber": "string",
+                "streetName": "string",
+                "streetType": "string",
+                "suburb": "string",
+                "state": "NSW",
+                "postcode": "string",
+                "country": "string"
+            },
+            "securityTypeStatus": "CH",
+            "estimatedValue": 0,
+            "purchasePrice": 0,
+            "projectCosts": 0,
+            "guaranteeAmount": 0,
+            "guarantorExistingLoanAmount": 0,
+            "valuationPlatform": "Valex",
+            "valuationId": "string",
+            "valuationAmount": 0,
+            "contractOfSaleDate": "string",
+            "valuationDetails": {
+                "valuationType": "Full",
+                "valuerCompanyName": "string",
+                "valuationDate": "string",
+                "valuerFirstName": "string",
+                "valuerSurname": "string",
+                "livingAreaInSqm": 0,
+                "siteArea": 0,
+                "siteAreaUnitOfMeasurement": "SQUAREMETERS",
+                "noOfBedrooms": 0,
+                "currentUse": "Residential",
+                "marketability": "Excellent",
+                "sellingPeriodGreaterThanSixMonths": true,
+                "commentsForSellingPeriod": "string",
+                "essentialRepairsRequired": true,
+                "essentialRepairDetails": "string",
+                "internalCondition": "Excellent",
+                "externalCondition": "Excellent",
+                "weeklyRentalValueUnfurnished": 0,
+                "propertyAndMarketRiskRatings": {
+                    "locationAndNeighbourhood": "High",
+                    "land": "High",
+                    "environmentalIssues": "High",
+                    "improvements": "High",
+                    "marketVolatality": "High",
+                    "recentMarketDirection": "High",
+                    "localEconomyImpact": "High",
+                    "marketSegmentConditions": "High"
+                },
+                "comparableSales": [
+                    {
+                        "saleAdddress": {
+                            "unitNumber": "string",
+                            "streetNumber": "string",
+                            "streetName": "string",
+                            "streetType": "string",
+                            "suburb": "string",
+                            "state": "NSW",
+                            "postcode": "string",
+                            "country": "string"
+                        },
+                        "saleDate": "string",
+                        "salePrice": 0
+                    }
+                ],
+                "custForecastStandardDeviation": 0
+            }
+        }
+    ],
+    "loans": [
+        {
+            "lenderLoanAccountId": "string",
+            "loanTermInMonths": 0,
+            "loanType": "PC",
+            "loanRepaymentType": "PIF",
+            "loanAmount": 0,
+            "loanPurpose": "BRG",
+            "initialInterestRateType": "Fixed",
+            "fixedRatePeriodInMonths": 0,
+            "interestOnlyPeriodInMonths": 0
+        }
+    ],
+    "contactName": "string",
+    "contactPhone": "string",
+    "contactEmail": "string",
+    "additionalNotes": "string",
+    "campaign": "string"
+}

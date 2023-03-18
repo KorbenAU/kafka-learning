@@ -1,0 +1,463 @@
+{
+    "type": "record",
+    "name": "myschema",
+    "fields": [
+        {
+            "name": "Identifier",
+            "type": "string",
+            "doc": "Type inferred from '\"sdfsdfsdf\"'"
+        },
+        {
+            "name": "Submission",
+            "type": {
+                "type": "record",
+                "name": "Submission",
+                "fields": [
+                    {
+                        "name": "Date",
+                        "type": {
+                            "type": "record",
+                            "name": "Submission",
+                            "namespace": "Date",
+                            "fields": [
+                                {
+                                    "name": "Year",
+                                    "type": "string",
+                                    "doc": "Type inferred from '\"2009\"'"
+                                },
+                                {
+                                    "name": "Month",
+                                    "type": "string",
+                                    "doc": "Type inferred from '\"06\"'"
+                                },
+                                {
+                                    "name": "Day",
+                                    "type": "string",
+                                    "doc": "Type inferred from '\"19\"'"
+                                }
+                            ]
+                        },
+                        "doc": "Type inferred from '{\"Year\":\"2009\",\"Month\":\"06\",\"Day\":\"19\"}'"
+                    }
+                ]
+            },
+            "doc": "Type inferred from '{\"Date\":{\"Year\":\"2009\",\"Month\":\"06\",\"Day\":\"19\"}}'"
+        },
+        {
+            "name": "Branch",
+            "type": {
+                "type": "record",
+                "name": "Branch",
+                "fields": [
+                    {
+                        "name": "BranchDomicile",
+                        "type": {
+                            "type": "record",
+                            "name": "Branch",
+                            "namespace": "BranchDomicile",
+                            "fields": [
+                                {
+                                    "name": "BSB",
+                                    "type": "string",
+                                    "doc": "Type inferred from '\"3159\"'"
+                                }
+                            ]
+                        },
+                        "doc": "Type inferred from '{\"BSB\":\"3159\"}'"
+                    }
+                ]
+            },
+            "doc": "Type inferred from '{\"BranchDomicile\":{\"BSB\":\"3159\"}}'"
+        },
+        {
+            "name": "PartySegment",
+            "type": {
+                "type": "array",
+                "items": {
+                    "type": "record",
+                    "name": "PartySegment",
+                    "fields": [
+                        {
+                            "name": "Type",
+                            "type": "string",
+                            "doc": "Type inferred from '\"B\"'"
+                        },
+                        {
+                            "name": "Identifier",
+                            "type": [
+                                "string",
+                                {
+                                    "type": "record",
+                                    "name": "PartySegment",
+                                    "namespace": "Identifier",
+                                    "fields": [
+                                        {
+                                            "name": "UniqueID",
+                                            "type": "string",
+                                            "doc": "Type inferred from '\"11asdfsd2311\"'"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "doc": "Type inferred from '\"asdfasdf\"'"
+                        },
+                        {
+                            "name": "Person",
+                            "type": {
+                                "type": "record",
+                                "name": "PartySegment",
+                                "namespace": "Person",
+                                "fields": [
+                                    {
+                                        "name": "RelatedEntityRef",
+                                        "type": "string",
+                                        "doc": "Type inferred from '\"asdfsfd\"'"
+                                    },
+                                    {
+                                        "name": "PersonName",
+                                        "type": {
+                                            "type": "record",
+                                            "name": "PartySegment",
+                                            "namespace": "PersonName.Person",
+                                            "fields": [
+                                                {
+                                                    "name": "FirstName",
+                                                    "type": "string",
+                                                    "doc": "Type inferred from '\"Yavuz\"'"
+                                                },
+                                                {
+                                                    "name": "OtherName",
+                                                    "type": "string",
+                                                    "doc": "Type inferred from '\"asdfsdf\"'"
+                                                },
+                                                {
+                                                    "name": "Surname",
+                                                    "type": "string",
+                                                    "doc": "Type inferred from '\"Yamankol\"'"
+                                                }
+                                            ]
+                                        },
+                                        "doc": "Type inferred from '{\"FirstName\":\"Yavuz\",\"OtherName\":\"asdfsdf\",\"Surname\":\"Yamankol\"}'"
+                                    },
+                                    {
+                                        "name": "DateOfBirth",
+                                        "type": {
+                                            "type": "record",
+                                            "name": "PartySegment",
+                                            "namespace": "DateOfBirth.Person",
+                                            "fields": [
+                                                {
+                                                    "name": "Date",
+                                                    "type": {
+                                                        "type": "record",
+                                                        "name": "PartySegment",
+                                                        "namespace": "Date.DateOfBirth.Person",
+                                                        "fields": [
+                                                            {
+                                                                "name": "Year",
+                                                                "type": "string",
+                                                                "doc": "Type inferred from '\"2012\"'"
+                                                            },
+                                                            {
+                                                                "name": "Month",
+                                                                "type": "string",
+                                                                "doc": "Type inferred from '\"12\"'"
+                                                            },
+                                                            {
+                                                                "name": "Day",
+                                                                "type": "string",
+                                                                "doc": "Type inferred from '\"3\"'"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "doc": "Type inferred from '{\"Year\":\"2012\",\"Month\":\"12\",\"Day\":\"3\"}'"
+                                                }
+                                            ]
+                                        },
+                                        "doc": "Type inferred from '{\"Date\":{\"Year\":\"2012\",\"Month\":\"12\",\"Day\":\"3\"}}'"
+                                    },
+                                    {
+                                        "name": "Employment",
+                                        "type": {
+                                            "type": "record",
+                                            "name": "PartySegment",
+                                            "namespace": "Employment.Person",
+                                            "fields": [
+                                                {
+                                                    "name": "Group",
+                                                    "type": "string",
+                                                    "doc": "Type inferred from '\"01asdf\"'"
+                                                }
+                                            ]
+                                        },
+                                        "doc": "Type inferred from '{\"Group\":\"01asdf\"}'"
+                                    }
+                                ]
+                            },
+                            "doc": "Type inferred from '{\"RelatedEntityRef\":\"asdfsfd\",\"PersonName\":{\"FirstName\":\"Yavuz\",\"OtherName\":\"asdfsdf\",\"Surname\":\"Yamankol\"},\"DateOfBirth\":{\"Date\":{\"Year\":\"2012\",\"Month\":\"12\",\"Day\":\"3\"}},\"Employment\":{\"Group\":\"01asdf\"}}'"
+                        }
+                    ]
+                }
+            },
+            "doc": "Type inferred from '[{\"Type\":\"B\",\"Identifier\":\"asdfasdf\",\"Person\":{\"RelatedEntityRef\":\"asdfsfd\",\"PersonName\":{\"FirstName\":\"Yavuz\",\"OtherName\":\"asdfsdf\",\"Surname\":\"Yamankol\"},\"DateOfBirth\":{\"Date\":{\"Year\":\"2012\",\"Month\":\"12\",\"Day\":\"3\"}},\"Employment\":{\"Group\":\"01asdf\"}}},{\"Type\":\"B\",\"Identifier\":{\"UniqueID\":\"11asdfsd2311\"},\"Person\":{\"RelatedEntityRef\":\"assdfsdf\",\"PersonName\":{\"FirstName\":\"Feriza\",\"OtherName\":\"sdf\",\"Surname\":\"Yamankol\"},\"DateOfBirth\":{\"Date\":{\"Year\":\"\",\"Month\":\"\",\"Day\":\"\"}},\"Employment\":{\"Group\":\"07\"}}}]'"
+        },
+        {
+            "name": "FinancialSegment",
+            "type": {
+                "type": "record",
+                "name": "FinancialSegment",
+                "fields": [
+                    {
+                        "name": "ValueItem",
+                        "type": {
+                            "type": "array",
+                            "items": {
+                                "type": "record",
+                                "name": "FinancialSegment",
+                                "namespace": "ValueItem",
+                                "fields": [
+                                    {
+                                        "name": "Identifier",
+                                        "type": "string",
+                                        "doc": "Type inferred from '\"asdfasdf\"'"
+                                    },
+                                    {
+                                        "name": "Asset",
+                                        "type": {
+                                            "type": "record",
+                                            "name": "FinancialSegment",
+                                            "namespace": "Asset.ValueItem",
+                                            "fields": [
+                                                {
+                                                    "name": "RelatedEntityRef",
+                                                    "type": "string",
+                                                    "doc": "Type inferred from '\"asdfasdfsf\"'"
+                                                },
+                                                {
+                                                    "name": "RealEstate",
+                                                    "type": {
+                                                        "type": "record",
+                                                        "name": "FinancialSegment",
+                                                        "namespace": "RealEstate.Asset.ValueItem",
+                                                        "fields": [
+                                                            {
+                                                                "name": "FloorArea",
+                                                                "type": "string",
+                                                                "doc": "Type inferred from '\"asdasf\"'"
+                                                            },
+                                                            {
+                                                                "name": "ResidentialType",
+                                                                "type": "string",
+                                                                "doc": "Type inferred from '\"asdfsdf\"'"
+                                                            },
+                                                            {
+                                                                "name": "ContractPriceAmount",
+                                                                "type": "double",
+                                                                "doc": "Type inferred from '21000.0'"
+                                                            },
+                                                            {
+                                                                "name": "Location",
+                                                                "type": {
+                                                                    "type": "record",
+                                                                    "name": "FinancialSegment",
+                                                                    "namespace": "Location.RealEstate.Asset.ValueItem",
+                                                                    "fields": [
+                                                                        {
+                                                                            "name": "Address",
+                                                                            "type": {
+                                                                                "type": "record",
+                                                                                "name": "FinancialSegment",
+                                                                                "namespace": "Address.Location.RealEstate.Asset.ValueItem",
+                                                                                "fields": [
+                                                                                    {
+                                                                                        "name": "BuildingName",
+                                                                                        "type": "string",
+                                                                                        "doc": "Type inferred from '\"2 Tyquin Ct||||\"'"
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "City",
+                                                                                        "type": "string",
+                                                                                        "doc": "Type inferred from '\"SHEPPARTON\"'"
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "State",
+                                                                                        "type": "string",
+                                                                                        "doc": "Type inferred from '\"VIC\"'"
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "Postcode",
+                                                                                        "type": "string",
+                                                                                        "doc": "Type inferred from '\"3630\"'"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "doc": "Type inferred from '{\"BuildingName\":\"2 Tyquin Ct||||\",\"City\":\"SHEPPARTON\",\"State\":\"VIC\",\"Postcode\":\"3630\"}'"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "doc": "Type inferred from '{\"Address\":{\"BuildingName\":\"2 Tyquin Ct||||\",\"City\":\"SHEPPARTON\",\"State\":\"VIC\",\"Postcode\":\"3630\"}}'"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "doc": "Type inferred from '{\"FloorArea\":\"asdasf\",\"ResidentialType\":\"asdfsdf\",\"ContractPriceAmount\":21000.0,\"Location\":{\"Address\":{\"BuildingName\":\"2 Tyquin Ct||||\",\"City\":\"SHEPPARTON\",\"State\":\"VIC\",\"Postcode\":\"3630\"}}}'"
+                                                }
+                                            ]
+                                        },
+                                        "doc": "Type inferred from '{\"RelatedEntityRef\":\"asdfasdfsf\",\"RealEstate\":{\"FloorArea\":\"asdasf\",\"ResidentialType\":\"asdfsdf\",\"ContractPriceAmount\":21000.0,\"Location\":{\"Address\":{\"BuildingName\":\"2 Tyquin Ct||||\",\"City\":\"SHEPPARTON\",\"State\":\"VIC\",\"Postcode\":\"3630\"}}}}'"
+                                    }
+                                ]
+                            }
+                        },
+                        "doc": "Type inferred from '[{\"Identifier\":\"asdfasdf\",\"Asset\":{\"RelatedEntityRef\":\"asdfasdfsf\",\"RealEstate\":{\"FloorArea\":\"asdasf\",\"ResidentialType\":\"asdfsdf\",\"ContractPriceAmount\":21000.0,\"Location\":{\"Address\":{\"BuildingName\":\"2 Tyquin Ct||||\",\"City\":\"SHEPPARTON\",\"State\":\"VIC\",\"Postcode\":\"3630\"}}}}},{\"Identifier\":\"asdfasdf\",\"Asset\":{\"RelatedEntityRef\":\"asdfasdfsf\",\"RealEstate\":{\"FloorArea\":\"asdasf\",\"ResidentialType\":\"asdfsdf\",\"ContractPriceAmount\":21000.0,\"Location\":{\"Address\":{\"BuildingName\":\"2 Tyquin Ct||||\",\"City\":\"SHEPPARTON\",\"State\":\"VIC\",\"Postcode\":\"3630\"}}}}}]'"
+                    }
+                ]
+            },
+            "doc": "Type inferred from '{\"ValueItem\":[{\"Identifier\":\"asdfasdf\",\"Asset\":{\"RelatedEntityRef\":\"asdfasdfsf\",\"RealEstate\":{\"FloorArea\":\"asdasf\",\"ResidentialType\":\"asdfsdf\",\"ContractPriceAmount\":21000.0,\"Location\":{\"Address\":{\"BuildingName\":\"2 Tyquin Ct||||\",\"City\":\"SHEPPARTON\",\"State\":\"VIC\",\"Postcode\":\"3630\"}}}}},{\"Identifier\":\"asdfasdf\",\"Asset\":{\"RelatedEntityRef\":\"asdfasdfsf\",\"RealEstate\":{\"FloorArea\":\"asdasf\",\"ResidentialType\":\"asdfsdf\",\"ContractPriceAmount\":21000.0,\"Location\":{\"Address\":{\"BuildingName\":\"2 Tyquin Ct||||\",\"City\":\"SHEPPARTON\",\"State\":\"VIC\",\"Postcode\":\"3630\"}}}}}]}'"
+        },
+        {
+            "name": "LoanDetailSegment",
+            "type": {
+                "type": "array",
+                "items": {
+                    "type": "record",
+                    "name": "LoanDetailSegment",
+                    "fields": [
+                        {
+                            "name": "Identifier",
+                            "type": "string",
+                            "doc": "Type inferred from '\"asdfasdf\"'"
+                        },
+                        {
+                            "name": "LoanTerm",
+                            "type": {
+                                "type": "record",
+                                "name": "LoanDetailSegment",
+                                "namespace": "LoanTerm",
+                                "fields": [
+                                    {
+                                        "name": "Units",
+                                        "type": "string",
+                                        "doc": "Type inferred from '\"Months\"'"
+                                    },
+                                    {
+                                        "name": "Value",
+                                        "type": "string",
+                                        "doc": "Type inferred from '\"360\"'"
+                                    }
+                                ]
+                            },
+                            "doc": "Type inferred from '{\"Units\":\"Months\",\"Value\":\"360\"}'"
+                        },
+                        {
+                            "name": "AmountRequested",
+                            "type": "double",
+                            "doc": "Type inferred from '20000.22'"
+                        },
+                        {
+                            "name": "LoanPurpose",
+                            "type": {
+                                "type": "record",
+                                "name": "LoanDetailSegment",
+                                "namespace": "LoanPurpose",
+                                "fields": [
+                                    {
+                                        "name": "PrimaryPurpose",
+                                        "type": "string",
+                                        "doc": "Type inferred from '\"Investment\"'"
+                                    },
+                                    {
+                                        "name": "LendingPurposeCode",
+                                        "type": "string",
+                                        "doc": "Type inferred from '\"07,07\"'"
+                                    }
+                                ]
+                            },
+                            "doc": "Type inferred from '{\"PrimaryPurpose\":\"Investment\",\"LendingPurposeCode\":\"07,07\"}'"
+                        },
+                        {
+                            "name": "RelatedEntityRef",
+                            "type": "string",
+                            "doc": "Type inferred from '\"sdfsdf\"'"
+                        }
+                    ]
+                }
+            },
+            "doc": "Type inferred from '[{\"Identifier\":\"asdfasdf\",\"LoanTerm\":{\"Units\":\"Months\",\"Value\":\"360\"},\"AmountRequested\":20000.22,\"LoanPurpose\":{\"PrimaryPurpose\":\"Investment\",\"LendingPurposeCode\":\"07,07\"},\"RelatedEntityRef\":\"sdfsdf\"},{\"Identifier\":\"asdfasdf\",\"LoanTerm\":{\"Units\":\"Months\",\"Value\":\"360\"},\"AmountRequested\":20000.22,\"LoanPurpose\":{\"PrimaryPurpose\":\"Investment\",\"LendingPurposeCode\":\"07,07\"},\"RelatedEntityRef\":\"sdfsdf\"}]'"
+        },
+        {
+            "name": "MortgageInsuranceSegment",
+            "type": {
+                "type": "array",
+                "items": {
+                    "type": "record",
+                    "name": "MortgageInsuranceSegment",
+                    "fields": [
+                        {
+                            "name": "ProductCode",
+                            "type": "string",
+                            "doc": "Type inferred from '\"Standard\"'"
+                        },
+                        {
+                            "name": "OutstandingBalanceIns",
+                            "type": "string",
+                            "doc": "Type inferred from '\"0.00\"'"
+                        },
+                        {
+                            "name": "CapitalisedAmount",
+                            "type": "string",
+                            "doc": "Type inferred from '\"0.00\"'"
+                        },
+                        {
+                            "name": "Identifier",
+                            "type": {
+                                "type": "record",
+                                "name": "MortgageInsuranceSegment",
+                                "namespace": "Identifier",
+                                "fields": [
+                                    {
+                                        "name": "UniqueID",
+                                        "type": "string",
+                                        "doc": "Type inferred from '\"43026420\"'"
+                                    },
+                                    {
+                                        "name": "Type",
+                                        "type": "string",
+                                        "doc": "Type inferred from '\"MIAssigned\"'"
+                                    }
+                                ]
+                            },
+                            "doc": "Type inferred from '{\"UniqueID\":\"43026420\",\"Type\":\"MIAssigned\"}'"
+                        },
+                        {
+                            "name": "ApprovalDate",
+                            "type": {
+                                "type": "record",
+                                "name": "MortgageInsuranceSegment",
+                                "namespace": "ApprovalDate",
+                                "fields": [
+                                    {
+                                        "name": "Year",
+                                        "type": "string",
+                                        "doc": "Type inferred from '\"2007\"'"
+                                    },
+                                    {
+                                        "name": "Month",
+                                        "type": "string",
+                                        "doc": "Type inferred from '\"07\"'"
+                                    },
+                                    {
+                                        "name": "Day",
+                                        "type": "string",
+                                        "doc": "Type inferred from '\"26\"'"
+                                    }
+                                ]
+                            },
+                            "doc": "Type inferred from '{\"Year\":\"2007\",\"Month\":\"07\",\"Day\":\"26\"}'"
+                        }
+                    ]
+                }
+            },
+            "doc": "Type inferred from '[{\"ProductCode\":\"Standard\",\"OutstandingBalanceIns\":\"0.00\",\"CapitalisedAmount\":\"0.00\",\"Identifier\":{\"UniqueID\":\"43026420\",\"Type\":\"MIAssigned\"},\"ApprovalDate\":{\"Year\":\"2007\",\"Month\":\"07\",\"Day\":\"26\"}},{\"ProductCode\":\"Standard\",\"OutstandingBalanceIns\":\"0.00\",\"CapitalisedAmount\":\"0.00\",\"Identifier\":{\"UniqueID\":\"43026420\",\"Type\":\"MIAssigned\"},\"ApprovalDate\":{\"Year\":\"2007\",\"Month\":\"07\",\"Day\":\"26\"}}]'"
+        }
+    ]
+}

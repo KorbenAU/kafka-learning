@@ -1,0 +1,4 @@
+Invoice Details Report (18/11/2022)
+Customer Code, Batch ID, LMI Number, Lender Reference Number, Borrower Surname, Borrower First Name, Company Name, Premium Amount, GST, Stamp Duty, Total Premium Payable, Charge to Borrower
+CBA,73601,43638361,467523139,Kersley,THIRDDDDD,,5846.42,584.64,707.42,7138.48,6700
+CBA_TPB,73601,43651581,566314658,WHITE,SECONDDDD,,6865.2,686.52,755.17,8306.89,7792

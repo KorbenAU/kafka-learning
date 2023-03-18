@@ -1,0 +1,170 @@
+{
+    "name": "ProposalSummary",
+    "type": {
+        "type": "record",
+        "name": "ProposalSummary",
+        "namespace": "au.com.cba.kafka.lmi.core",
+        "fields": [
+            {
+                "name": "Applicants",
+                "type": [
+                    "null",
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "record",
+                            "name": "Applicant",
+                            "namespace": "au.com.cba.kafka.lmi.core",
+                            "fields": [
+                                {
+                                    "name": "ApplicantType",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "ApplicantRole",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "FirstName",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "MiddleName",
+                                    "type": [
+                                        "null",
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "name": "SurName",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "ComapanyName",
+                                    "type": [
+                                        "null",
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "name": "wCompanyABN",
+                                    "type": [
+                                        "null",
+                                        "string"
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Loans",
+                "type": [
+                    "null",
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "record",
+                            "name": "Loan",
+                            "namespace": "au.com.cba.kafka.lmi.core",
+                            "fields": [
+                                {
+                                    "name": "LoanTermInMonths",
+                                    "type": "int"
+                                },
+                                {
+                                    "name": "LoanAmount",
+                                    "type": "double"
+                                },
+                                {
+                                    "name": "LoanPurpose",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "SecurityAddresses",
+                "type": [
+                    "null",
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "record",
+                            "name": "Address",
+                            "namespace": "au.com.cba.kafka.lmi.core",
+                            "fields": [
+                                {
+                                    "name": "UnitNumber",
+                                    "type": [
+                                        "null",
+                                        "string"
+                                    ]
+                                },
+                                {
+                                    "name": "StreetNumber",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "StreetName",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "StreetType",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "Suburb",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "State",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "Postcode",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "Country",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "ProposalSubmissionDate",
+                "type": "string"
+            },
+            {
+                "name": "PremiumPayment",
+                "type": ["null", "string"]
+            },
+            {
+                "name": "LenderReference",
+                "type": "string"
+            },
+            {
+                "name": "ProductName",
+                "type": "string"
+            },
+            {
+                "name": "CoverType",
+                "type": "string"
+            },
+            {
+                "name": "CoverRate",
+                "type": "double"
+            },
+            {
+                "name": "CoverTerm",
+                "type": ["null", "int"]
+            }
+        ]
+    }
+}

@@ -1,0 +1,567 @@
+{
+    "type": "record",
+    "name": "PolicyApplicationDecision",
+    "namespace": "au.com.cba.kafka.lmi.core",
+    "fields": [
+        {
+            "name": "header",
+            "type": {
+                "type": "record",
+                "name": "KafkaEventHeader",
+                "namespace": "au.com.cba.kafka.lmi.core.header",
+                "fields": [
+                    {
+                        "name": "correlationId",
+                        "type": "string"
+                    },
+                    {
+                        "name": "processPath",
+                        "type": [
+                            "null",
+                            {
+                                "type": "array",
+                                "items": {
+                                    "type": "record",
+                                    "name": "ProcessPathElement",
+                                    "namespace": "au.com.cba.kafka.lmi.core.header",
+                                    "fields": [
+                                        {
+                                            "name": "source",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "name": "timestamp",
+                                            "type": "string"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "ProposalStatus",
+            "type": {
+                "type": "record",
+                "name": "ProposalStatus",
+                "namespace": "au.com.cba.kafka.lmi.core",
+                "fields": [
+                    {
+                        "name": "ProposalId",
+                        "type": "string"
+                    },
+                    {
+                        "name": "status",
+                        "type": "string"
+                    },
+                    {
+                        "name": "PolicyNumber",
+                        "type": "string"
+                    },
+                    {
+                        "name": "ProposalDecision",
+                        "type": [
+                            "null",
+                            {
+                                "type": "record",
+                                "name": "ProposalDecision",
+                                "namespace": "au.com.cba.kafka.lmi.core",
+                                "fields": [
+                                    {
+                                        "name": "Decision",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "name": "PolicyNumber",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "name": "PolicyVersion",
+                                        "type": "int"
+                                    },
+                                    {
+                                        "name": "ProposalSummary",
+                                        "type": {
+                                            "type": "record",
+                                            "name": "ProposalSummary",
+                                            "namespace": "au.com.cba.kafka.lmi.core",
+                                            "fields": [
+                                                {
+                                                    "name": "Applicants",
+                                                    "type": [
+                                                        "null",
+                                                        {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "type": "record",
+                                                                "name": "Applicant",
+                                                                "namespace": "au.com.cba.kafka.lmi.core",
+                                                                "fields": [
+                                                                    {
+                                                                        "name": "ApplicantType",
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "name": "ApplicantRole",
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "name": "FirstName",
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "name": "MiddleName",
+                                                                        "type": [
+                                                                            "null",
+                                                                            "string"
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "SurName",
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "name": "ComapanyName",
+                                                                        "type": [
+                                                                            "null",
+                                                                            "string"
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "wCompanyABN",
+                                                                        "type": [
+                                                                            "null",
+                                                                            "string"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Loans",
+                                                    "type": [
+                                                        "null",
+                                                        {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "type": "record",
+                                                                "name": "Loan",
+                                                                "namespace": "au.com.cba.kafka.lmi.core",
+                                                                "fields": [
+                                                                    {
+                                                                        "name": "LoanTermInMonths",
+                                                                        "type": "int"
+                                                                    },
+                                                                    {
+                                                                        "name": "LoanAmount",
+                                                                        "type": "double"
+                                                                    },
+                                                                    {
+                                                                        "name": "LoanPurpose",
+                                                                        "type": "string"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "SecurityAddresses",
+                                                    "type": [
+                                                        "null",
+                                                        {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "type": "record",
+                                                                "name": "Address",
+                                                                "namespace": "au.com.cba.kafka.lmi.core",
+                                                                "fields": [
+                                                                    {
+                                                                        "name": "UnitNumber",
+                                                                        "type": [
+                                                                            "null",
+                                                                            "string"
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "StreetNumber",
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "name": "StreetName",
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "name": "StreetType",
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "name": "Suburb",
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "name": "State",
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "name": "Postcode",
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "name": "Country",
+                                                                        "type": "string"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "ProposalSubmissionDate",
+                                                    "type": "string"
+                                                },
+                                                {
+                                                    "name": "PremiumPayment",
+                                                    "type": ["null", "string"]
+                                                },
+                                                {
+                                                    "name": "LenderReference",
+                                                    "type": "string"
+                                                },
+                                                {
+                                                    "name": "ProductName",
+                                                    "type": "string"
+                                                },
+                                                {
+                                                    "name": "CoverType",
+                                                    "type": "string"
+                                                },
+                                                {
+                                                    "name": "CoverRate",
+                                                    "type": "double"
+                                                },
+                                                {
+                                                    "name": "CoverTerm",
+                                                    "type": ["null", "int"]
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "AcceptanceAdvice",
+                                        "type": [
+                                            "null",
+                                            {
+                                                "type": "record",
+                                                "name": "AcceptanceAdvice",
+                                                "namespace": "au.com.cba.kafka.lmi.core",
+                                                "fields": [
+                                                    {
+                                                        "name": "InsuredParty",
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "name": "TotalInsuredLoanAmount",
+                                                        "type": "double"
+                                                    },
+                                                    {
+                                                        "name": "CapitalisedPremiumAmount",
+                                                        "type": "double"
+                                                    },
+                                                    {
+                                                        "name": "LoanApprovalDate",
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "name": "ApprovalDate",
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "name": "FinalPremiumPaymentDate",
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "name": "CoverExpiryDate",
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "name": "PremiumDetails",
+                                                        "type": [
+                                                            "null",
+                                                            {
+                                                                "type": "array",
+                                                                "items": {
+                                                                    "type": "record",
+                                                                    "name": "PremiumDetail",
+                                                                    "namespace": "au.com.cba.kafka.lmi.core",
+                                                                    "fields": [
+                                                                        {
+                                                                            "name": "PremiumBeforeCredit",
+                                                                            "type": "double"
+                                                                        },
+                                                                        {
+                                                                            "name": "TotalPremiumCredit",
+                                                                            "type": "double"
+                                                                        },
+                                                                        {
+                                                                            "name": "Premium",
+                                                                            "type": "double"
+                                                                        },
+                                                                        {
+                                                                            "name": "PremiumCreditItems",
+                                                                            "type": [
+                                                                                "null",
+                                                                                {
+                                                                                    "type": "array",
+                                                                                    "items": [
+                                                                                        "null",
+                                                                                        {
+                                                                                            "type": "record",
+                                                                                            "name": "PremiumCreditItem",
+                                                                                            "namespace": "au.com.cba.kafka.lmi.core",
+                                                                                            "fields": [
+                                                                                                {
+                                                                                                    "name": "PolicyNumber",
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                {
+                                                                                                    "name": "PolicyVersion",
+                                                                                                    "type": "int"
+                                                                                                },
+                                                                                                {
+                                                                                                    "name": "CreditAmount",
+                                                                                                    "type": "double"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            "default": null
+                                                                        },
+                                                                        {
+                                                                            "name": "BankPayable",
+                                                                            "type": [
+                                                                                "null",
+                                                                                {
+                                                                                    "type": "record",
+                                                                                    "name": "Payable",
+                                                                                    "namespace": "au.com.cba.kafka.lmi.core",
+                                                                                    "fields": [
+                                                                                        {
+                                                                                            "name": "Premium",
+                                                                                            "type": "double"
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "Gst",
+                                                                                            "type": "double"
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "StampDuty",
+                                                                                            "type": "double"
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "TotalPayable",
+                                                                                            "type": "double"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "name": "BorrowerPayable",
+                                                                            "type": [
+                                                                                "null",
+                                                                                "Payable"
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "SupersededStatement",
+                                                        "type": [
+                                                            "null",
+                                                            "string"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "QuoteDishonourReasons",
+                                                        "type": [
+                                                            "null",
+                                                            {
+                                                                "type": "array",
+                                                                "items": {
+                                                                    "type": "record",
+                                                                    "name": "QuoteDishonourReason",
+                                                                    "namespace": "au.com.cba.kafka.lmi.core",
+                                                                    "fields": [
+                                                                        {
+                                                                            "name": "ReasonCode",
+                                                                            "type": "string"
+                                                                        },
+                                                                        {
+                                                                            "name": "Reason",
+                                                                            "type": "string"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "ConditionalApprovalAdvice",
+                                        "type": [
+                                            "null",
+                                            {
+                                                "type": "record",
+                                                "name": "ConditionalApprovalAdvice",
+                                                "namespace": "au.com.cba.kafka.lmi.core",
+                                                "fields": [
+                                                    {
+                                                        "name": "TotalInsuredLoanAmount",
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "name": "ConditionalApprovalDate",
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "name": "ValuationRequired",
+                                                        "type": "boolean"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "DeclineAdvice",
+                                        "type": [
+                                            "null",
+                                            {
+                                                "type": "record",
+                                                "name": "DeclineAdvice",
+                                                "namespace": "au.com.cba.kafka.lmi.core",
+                                                "fields": [
+                                                    {
+                                                        "name": "DeclineReasons",
+                                                        "type": [
+                                                            "null",
+                                                            {
+                                                                "type": "array",
+                                                                "items": {
+                                                                    "type": "record",
+                                                                    "name": "DeclineReason",
+                                                                    "namespace": "au.com.cba.kafka.lmi.core",
+                                                                    "fields": [
+                                                                        {
+                                                                            "name": "ReasonCode",
+                                                                            "type": "string"
+                                                                        },
+                                                                        {
+                                                                            "name": "ReasonMessages",
+                                                                            "type": [
+                                                                                "null",
+                                                                                {
+                                                                                    "type": "array",
+                                                                                    "items": [
+                                                                                        "null",
+                                                                                        "string"
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "ValidationErrors",
+                                        "type": [
+                                            "null",
+                                            {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "record",
+                                                    "name": "ValidationError",
+                                                    "namespace": "au.com.cba.kafka.lmi.core",
+                                                    "fields": [
+                                                        {
+                                                            "name": "Field",
+                                                            "type": "string"
+                                                        },
+                                                        {
+                                                            "name": "Code",
+                                                            "type": "string"
+                                                        },
+                                                        {
+                                                            "name": "Message",
+                                                            "type": "string"
+                                                        },
+                                                        {
+                                                            "name": "Severity",
+                                                            "type": "string"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Insurer",
+                                        "type": {
+                                            "type": "record",
+                                            "name": "Insurer",
+                                            "namespace": "au.com.cba.kafka.lmi.core",
+                                            "fields": [
+                                                {
+                                                    "name": "Name",
+                                                    "type": "string"
+                                                },
+                                                {
+                                                    "name": "Abn",
+                                                    "type": "string"
+                                                },
+                                                {
+                                                    "name": "Address",
+                                                    "type": "string"
+                                                },
+                                                {
+                                                    "name": "UnderwriterName",
+                                                    "type": "string"
+                                                },
+                                                {
+                                                    "name": "UnderwriterPhone",
+                                                    "type": "string"
+                                                },
+                                                {
+                                                    "name": "UnderwriterNotes",
+                                                    "type": ["null", "string"]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

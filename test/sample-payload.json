@@ -1,0 +1,51 @@
+{
+    "Funder": {
+        "UniqueId": 250
+    },
+    "LoanDetails": {
+        "OriginatorReferenceID": 250,
+        "LenderLoanApprovalDate": "2022-01-19",
+        "EstimatedSettlementDate": "2022-01-14"
+    },
+    "TrusApplication": {
+        "SequenceNumber": 100
+    },
+    "SalesChannel": {
+        "Company": {
+            "CompanyName": "BBBrokers"
+        }
+    },
+    "Insurance": {
+        "ProductName": "Standard",
+        "PercentCoverRequired": 100,
+        "UnderwritingType": "DUA",
+        "QuotationRequestID": 7139164
+    },
+    "Liability": {},
+    "Summary": {
+        "Fee": {
+            "CapitaliseFee": true
+        },
+        "Applicants": [
+            {
+                "applicantType": "Individual",
+                "applicantRole": "Borrower"
+            }
+        ]
+    },
+    // "RiskAnalysis": {
+    //     "RiskRating": {
+    //         "Rating": 130
+    //     }
+    // },
+    "PersonApplicant": {
+        "FirstHomeBuyer": true,
+        "PersonApplicant": {
+            "FirstName": "Jo",
+            "Surname": "Change",
+            "MiddleName": "test"
+        },
+        "DateOfBirth": "1986-03-30",
+        //"MaritalStatus": "Single"
+    }
+}
